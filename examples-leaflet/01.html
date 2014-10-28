@@ -80,22 +80,24 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>00 <span class="text-info">Page Title</span></h2>
+        <h2>01 <span class="text-info">Base maps</span></h2>
         <p class="lead">Things to remember: </p>
         <p>
           <dl class="dl-horizontal">
-            <dt>Lorem ipsum dolor sit amet</dt>
-              <dd>consectetur adipiscing elit.</dd>
-            <dt>Lorem ipsum dolor sit amet</dt>
-              <dd>consectetur adipiscing elit.</dd>.
+            <dt>Map initialization</dt>
+              <dd>Declare the starting parameters for the map with <code>L.Map()</code>. First parameter is an id element (e.g. <em>map</em>). Second parameter is optional and corresponds to an <a href="http://leafletjs.com/reference.html#map-options" target="_blank">object</a> that contains map options.</dd>
+            <dt>Center a map</dt>
+              <dd>Set the center of a map by using <code>map.setView()</code> by passing an object <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a> as input parameter.</dd>
+            <dt>Add a base map layer</dt>
+              <dd>Declare the source of the map tiles with <code>L.tileLayer()</code></dd>.
           </dl>
         </p>
         <p class="lead">Key methods: </p>
         <ul>
-          <li><code><a href="#" target="_blank">Lorem</a></code></li>
-          <li><code><a href="#" target="_blank">ipsum</a></code></li>
-          <li><code><a href="#" target="_blank">dolor</a></code></li>
-        </ul>    
+          <li><code><a href="http://leafletjs.com/reference.html#map-constructor" target="_blank">L.Map()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#map-set-methods" target="_blank">map.setView()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">L.tileLayer()</a></code></li>
+        </ul>
       </div> <!-- /data -->
       
       <div id="map-area" class="col-md-6 pull-right">
@@ -129,6 +131,23 @@
     /*******************************
       Map stuff
     *******************************/
+  // initialize the map
+    var map = L.map('map', {
+      scrollWheelZoom: true,
+      minZoom: 5,
+      maxZoom: 18,
+      zoomControl:false 
+    });
+ 
+    // set the position and zoom level of the map
+    map.setView([45.479, 9.403], 8);
+
+    // Nothing happens so far. A lauer has to be added 
+    var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
+    L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+      attribution: 'Map data &copy; ' + mapLink, 
+      maxZoom: 18
+    }).addTo(map);
 
   </script>
 </body>
