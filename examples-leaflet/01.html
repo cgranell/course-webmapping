@@ -81,17 +81,14 @@
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
         <h2>01 <span class="text-info">Base maps</span></h2>
-        <p class="lead">Things to remember: </p>
-        <p>
-          <dl class="dl-horizontal">
+          <dl class="dl-vertical">
             <dt>Map initialization</dt>
-              <dd>Declare the starting parameters for the map with <code>L.Map()</code>. First parameter is an id element (e.g. <em>map</em>). Second parameter is optional and corresponds to an <a href="http://leafletjs.com/reference.html#map-options" target="_blank">object</a> that contains map options.</dd>
+              <dd>Declare the starting parameters for the map with <code>L.Map()</code>. First parameter is an div  element id (e.g. <em>map</em>). Second parameter is optional and corresponds to an <a href="http://leafletjs.com/reference.html#map-options" target="_blank">object</a> that contains map state options.</dd>
             <dt>Center a map</dt>
-              <dd>Set the center of a map by using <code>map.setView()</code> by passing an object <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a> as input parameter.</dd>
+              <dd>Set the center of a map by using <code>map.setView()</code> by passing an object <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a> as input parameter. Finding the pair of coordinates, latlon, of the centre of a map seems an obstacle. One can get them from diverse services on the Web such like <a href="http://geojson.io" target="_blank">geojson.io</a>, a native geojson editor to encode geometries (point, lines, polygons) in geojson format. Note that in geojson the longitude comes first and then latitude while Leaflet follows the order latitude and longitude of the centre point.</dd>
             <dt>Add a base map layer</dt>
-              <dd>Declare the source of the map tiles with <code>L.tileLayer()</code></dd>.
+              <dd>Declare the source of the map tiles with <code>L.tileLayer()</code>. First parameter is a URL template. Second parameter is the <a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">TileLayer options</a> that provide a range of different options when loading or displaying the tiles such as <em>attribution</em> and <em>maxZoom</em>. Attribution is the placing of appropriate reference to the source of the tiles.</dd>.
           </dl>
-        </p>
         <p class="lead">Key methods: </p>
         <ul>
           <li><code><a href="http://leafletjs.com/reference.html#map-constructor" target="_blank">L.Map()</a></code></li>
@@ -140,7 +137,7 @@
     });
  
     // set the position and zoom level of the map
-    map.setView([45.479, 9.403], 8);
+    map.setView([39.88721, -0.08445], 6);
 
     // Nothing happens so far. A lauer has to be added 
     var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
