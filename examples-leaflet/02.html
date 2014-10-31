@@ -80,20 +80,20 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>01 <span class="text-info">Base maps</span></h2>
-        <h3>Load and display a base map layer on a map</h3>
+        <h2>02 <span class="text-info">Base maps</span></h2>
+        <h3>Control Layer to pick one out of several base map layers</h3>
           <dl class="dl-vertical">
-            <dt>Map initialization</dt>
-              <dd>Declare the starting parameters for the map with <code>L.Map()</code>. First parameter is an div  element id (e.g. <em>map</em>). Second parameter is optional and corresponds to an <a href="http://leafletjs.com/reference.html#map-options" target="_blank">object</a> that contains map state options.</dd>
-            <dt>Center a map</dt>
-              <dd>Set the center of a map by using <code>map.setView()</code> by passing an object <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a> as input parameter. Finding the pair of coordinates, latlon, of the centre of a map seems an obstacle. One can get them from diverse services on the Web such like <a href="http://geojson.io" target="_blank">geojson.io</a>, a native geojson editor to encode geometries (point, lines, polygons) in geojson format. Note that in geojson the longitude comes first and then latitude while Leaflet follows the order latitude and longitude of the centre point.</dd>
-            <dt>Add a base map layer</dt>
-              <dd>Declare the source of the map tiles with <code>L.tileLayer()</code>. First parameter is a URL template. Second parameter is the <a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">TileLayer options</a> that provide a range of different options when loading or displaying the tiles such as <em>attribution</em> and <em>maxZoom</em>. Attribution is the placing of appropriate reference to the source of the tiles.</dd>.
+            <dt>Declare various base map layer</dt>
+            <dd>Declare the source of the map tiles with <code>L.tileLayer()</code>, one call for each base map to be added.</dd>
+            <dt>Set active a base layer</dt>
+            <dd>The default base map layer is set by calling <code>addMap()</code>. Otherwise, the map is being displayed without base map until we select one from the Layer control.</dd>
+            <dt>Add a layer control to the map</dt>
+            <dd>A layer control manages basemap layers and overlayers. It is created by calling <code>L.control.layers()</code> with an object <a href="http://leafletjs.com/reference.html#control-layers-config" target="_blank">Layer Config</a> as input parameter. It contains a list of base map layers and overlayers. Once the control layer is initialized, it is added to the map with <code>map.addControl()</code>.</dd>
           </dl>
-        <h3>Key methods</h3>
+         <h3>Key methods</h3>
         <ul>
-          <li><code><a href="http://leafletjs.com/reference.html#map-constructor" target="_blank">L.Map()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#map-set-methods" target="_blank">map.setView()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#control-layers" target="_blank">L.control.layers()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#map-stuff-methods" target="_blank">map.addControl()</a></code></li>
           <li><code><a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">L.tileLayer()</a></code></li>
         </ul>
       </div> <!-- /data -->
@@ -140,13 +140,39 @@
     // set the position and zoom level of the map
     map.setView([39.88721, -0.08445], 6);
 
-    // Nothing happens so far. Map is empty
- 
-    var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
-    L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
-      attribution: 'Map data &copy; ' + mapLink, 
+    // Nothing happens so far. A lauer has to be added 
+    var osmAttribution = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
+    var osmMapLayer = L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+      attribution: 'Map data Mapnik &copy; ' + osmAttribution, 
       maxZoom: 18
-    }).addTo(map);
+    }).addTo(map);  // make it the active, default base layer on the map
+
+    var osmBWLayer = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
+      attribution: 'Map data Black and White &copy;'  + osmAttribution, 
+      maxZoom: 18
+    });
+
+    var stamenAttribution = 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>';
+
+    var stamenLayer = L.tileLayer('http://{s}.tile.stamen.com/watercolor/{z}/{x}/{y}.png', {
+        attribution: stamenAttribution,
+        subdomains: 'abcd',
+        minZoom: 1,
+        maxZoom: 16
+    });
+
+  var baselayers = {
+    "OSM.Mapnik": osmMapLayer,
+    "OSM.Black&White": osmBWLayer,
+    "Stamen.WaterColor": stamenLayer
+  }
+
+  var overlayer = {};
+
+  var layerControl = L.control.layers(baselayers, overlayers, {
+    position: 'topright'
+  });
+  map.addControl(layerControl);
 
   </script>
 </body>
