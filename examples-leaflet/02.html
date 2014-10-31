@@ -84,9 +84,9 @@
         <h3>Control Layer to pick one out of several base map layers</h3>
           <dl class="dl-vertical">
             <dt>Declare various base map layer</dt>
-            <dd>Declare the source of the map tiles with <code>L.tileLayer()</code>, one call for each base map to be added.</dd>
+            <dd>Declare the source of the map tiles with <code>L.tileLayer()</code>, one call for each base map to add.</dd>
             <dt>Set active a base layer</dt>
-            <dd>The default base map layer is set by calling <code>addMap()</code>. Otherwise, the map is being displayed without base map until we select one from the Layer control.</dd>
+            <dd>The default base map layer is set by calling <code>addMap()</code>. Otherwise, the map is being displayed without any base map until we select one from the Layer control.</dd>
             <dt>Add a layer control to the map</dt>
             <dd>A layer control manages basemap layers and overlayers. It is created by calling <code>L.control.layers()</code> with an object <a href="http://leafletjs.com/reference.html#control-layers-config" target="_blank">Layer Config</a> as input parameter. It contains a list of base map layers and overlayers. Once the control layer is initialized, it is added to the map with <code>map.addControl()</code>.</dd>
           </dl>
@@ -140,7 +140,8 @@
     // set the position and zoom level of the map
     map.setView([39.88721, -0.08445], 6);
 
-    // Nothing happens so far. A lauer has to be added 
+    // Nothing happens so far. Map is empty
+
     var osmAttribution = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
     var osmMapLayer = L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
       attribution: 'Map data Mapnik &copy; ' + osmAttribution, 
@@ -161,17 +162,20 @@
         maxZoom: 16
     });
 
+  // List of basemap layers
   var baselayers = {
     "OSM.Mapnik": osmMapLayer,
     "OSM.Black&White": osmBWLayer,
     "Stamen.WaterColor": stamenLayer
   }
 
-  var overlayer = {};
+  var overlayers = {};
 
+  // Create layer control 
   var layerControl = L.control.layers(baselayers, overlayers, {
     position: 'topright'
   });
+  // add layer control to the map
   map.addControl(layerControl);
 
   </script>
