@@ -1,19 +1,21 @@
-# Programación de Sistemas de Información Geográfica en entornos web
+# Programación de de aplicaciones web de mapas
 
 Esta asignatura de cuatro semanas forma parte de la especialziación de [Programación de sistemas de información geográfica](http://estudios.uoc.edu/es/masters-posgrados-especializaciones/especializacion/informatica-multimedia-telecomunicacion/programacion-desarrollo-sistemas-informacion-geografica/), de la [UOC]. 
 
-En este repositor puedes encotnratr ejemplso de progrmacion que se utilizan en la asignatra. Tambien se incluiran una serie de videssitio web 
-
 *Créditos totales de la especialización*: 12 ECTS
+
 *Inicio especialización*: 18 marzo 2015
 
+Este repositorio complementa las actividades docentes de la asignatura. Aquí puedes encontrar ejemplos sencillos de programación de aplicaciones web de mapas con JavaScript.  
+
 *Créditos totales de la asignatura*: 4 ECTS
+
 *Inicio asignatura*: Mayo 2015 
 
 ## Objetivos
-El objetivo principal es que los estudiantes conozcan buenas prácticas para la creación de aplicaciones web de mapas. No se trata de aprender programación  en JavaScript (existen montones de tutoriales y recursos en linea para ello), sino de connocer unos pasos sencillos para diseñar una visualización, ya que los mapas son visualizacioens de datos con el fin de informar a su audiencia. 
+El objetivo principal es que los estudiantes conozcan buenas prácticas para la creación de aplicaciones web de mapas. No se trata de aprender programación  en JavaScript (existen montones de tutoriales y recursos en linea para ello), sino de conocer una serie de pasos sencillos para diseñar una visualización, ya que los aplicaciones de mapas son visualizaciones de datos con el fin de informar a su audiencia. 
 
-No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, no sobre papel. Veremos qué herramientas de desarrollo web tenemos a nuestro alcance y la librería JavaScript [Leaflet.js](http://leafletjs.com/) para la creación de aplicaciones web de mapas.  
+No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no sobre papel. Veremos qué herramientas de desarrollo web tenemos a nuestro alcance y sobre todo utlizaremos la librería JavaScript [Leaflet.js](http://leafletjs.com/) para la creación de aplicaciones de ejemplo.  
 
 ## Contenido
 
