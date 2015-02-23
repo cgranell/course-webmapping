@@ -87,14 +87,14 @@
         <h2>01 <span class="text-info">Mapas base</span></h2>
         <h3>Carga y muestra una capa base en un mapa</h3>
           <dl class="dl-vertical">
-            <dt>Map initialization</dt>
-              <dd>Declare the starting parameters for the map with <code>L.Map()</code>. First parameter is an div  element id (e.g. <em>map</em>). Second parameter is optional and corresponds to an <a href="http://leafletjs.com/reference.html#map-options" target="_blank">object</a> that contains map state options.</dd>
-            <dt>Center a map</dt>
-              <dd>Set the center of a map by using <code>map.setView()</code> by passing an object <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a> as input parameter. Finding the pair of coordinates, latlon, of the centre of a map seems an obstacle. One can get them from diverse services on the Web such like <a href="http://geojson.io" target="_blank">geojson.io</a>, a native geojson editor to encode geometries (point, lines, polygons) in geojson format. Note that in geojson the longitude comes first and then latitude while Leaflet follows the order latitude and longitude of the centre point.</dd>
-            <dt>Add a base map layer</dt>
-              <dd>Declare the source of the map tiles with <code>L.tileLayer()</code>. First parameter is a URL template. Second parameter is the <a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">TileLayer options</a> that provide a range of different options when loading or displaying the tiles such as <em>attribution</em> and <em>maxZoom</em>. Attribution is the placing of appropriate reference to the source of the tiles.</dd>.
+            <dt>Inicializar el mapa</dt>
+              <dd>Declara los parámetros de configuración del mapa al método <code>L.Map()</code>. El primer parámetro es el id del elemento div para el mapa (p.e. <em>map</em>). El segundo parámetro es opcional y se trata de un <a href="http://leafletjs.com/reference.html#map-options" target="_blank">objecto</a> con las propiedades y valor de las opciones del mapa.</dd>
+            <dt>Centrar el mapa</dt>
+              <dd>Con el método <code>map.setView()</code> y como como parámetro de entrada un objeto <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a>. A veces es difícil encontrar el punto central de una mapa. Un servicio de ayuda es <a href="http://geojson.io" target="_blank">geojson.io</a>, a un editor natvo en wen que codifica geometrías (point, lines, polygons) en formato geojson. Atención: en geojosn, longitud va primero y luego latitud mientras que Leaflet sigue el orden inverso, latitude y  longitud, para especificar una coordenada.</dd>
+            <dt>Añadir un mapa base</dt>
+              <dd>La fuente de un mapa base se declara con <code>L.tileLayer()</code>. El primer parámetro es una plantilla URL. El segundo parámetro es un objeto <a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">TileLayer options</a> que contiene uan serie de propiedades y opciones para la visualización de la capa base como por ejemplo <em>attribution</em> y <em>maxZoom</em>.</dd>.
           </dl>
-        <h3>Key methods</h3>
+        <h3>Para recordar...</h3>
         <ul>
           <li><code><a href="http://leafletjs.com/reference.html#map-constructor" target="_blank">L.Map()</a></code></li>
           <li><code><a href="http://leafletjs.com/reference.html#map-set-methods" target="_blank">map.setView()</a></code></li>
