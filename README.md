@@ -28,9 +28,10 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 * 1.4-js-3: html + javascript
 
 ### Semana 2: Leaflet.js 
-* 2.1-intro (<3 min): contenido semana 
-* 2.2-servicios-geo (<10 min): IDE y Servicios OGC, Open Street Maps, Google Mapas (Jesus), Servicios ESRI and ArcGIs Online (Semana 4).
-* 2.3.leaflet (): Repositorio de ejemplos
+* 2.1-intro (<3 min): presentacion contenido semana
+* 2.2-github (<3 min): Como navegar por los ejemplos del repositorio 
+* 2.3-servicios-geo (<10 min): IDE y Servicios OGC, Open Street Maps, Google Mapas (Jesus), Servicios ESRI and ArcGIs Online (Semana 4). Nota: O integrar con los mini videos sobre leaflet a medida que los services se necesiten 
+* 2.3.leaflet (): mini videos para explicar algunos de los ejemplos del repositorio. El resto para estudio para los estudiantes.
 
 ### Semana 3: ESRI Leaflet plugins
 * 3.1-intro (<3 min): contenido semana 
