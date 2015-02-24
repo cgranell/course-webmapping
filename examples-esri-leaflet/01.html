@@ -53,19 +53,6 @@
       border-radius: 6px;*/
     }
 
-    #basemaps-wrapper {
-      position: absolute;
-      top: 25px;
-      right: 20px;
-      z-index: 10;
-      background: white;
-      padding: 10px;
-    }
-
-    #basemaps {
-      margin-bottom: 5px;
-    }
-
     /* Helper Classes */
     .textcenter { text-align: center; }
 
@@ -97,35 +84,28 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>02 <span class="text-info">Mapas base</span></h2>
-        <h3>Selección de mapas base</h3>
+        <h2>01 <span class="text-info">Mapas base</span></h2>
+        <h3>Carga y muestra una capa base en un mapa</h3>
           <dl class="dl-vertical">
-            <dt>Seleccionar el mapa base activo</dt>
-            <dd>Una vez inicializado el mapa base con <code>L.esri.basemapLayer()</code>, se llama a <code>addMap()</code> para añadir la capa base al mapa.</dd>
-            <dt>Cambiar el mapa base</dt>
-            <dd>La función <code>updateBaseMap()</code> es clave.</dd>
+            <dt>Importar Esri leaflet plugin</dt>
+              <dd>Como cualquier otros fichero JavaScript, mediante el elemento HTML <code>script</code></dd>
+            <dt>Inicializar el mapa</dt>
+              <dd>Con el método <code>L.Map()</code> de Leaflet.</dd>
+            <dt>Centrar el mapa</dt>
+              <dd>Con el método <code>map.setView()</code> de Leaflet.</dd>
+            <dt>Añadir un mapa base</dt>
+              <dd>La fuente de un mapa base se declara con <code>L.esri.basemapLayer()</code>. El primer parámetro es el nombre de una capa base que Esri proporciona (Streets, Topographic, NationalGeographic, Oceans, Gray, DarkGray, Imagery, ShadedRelief). El segundo parámetro es opcional y es el mismo objeto <a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">TileLayer options</a> de Leaflet, el cual contiene una serie de propiedades y opciones para la visualización de la capa base como por ejemplo <em>attribution</em> y <em>maxZoom</em>.</dd>.
           </dl>
-         <h3>Para recordar...</h3>
+        <h3>Para recordar...</h3>
         <ul>
+          <li><code><a href="http://leafletjs.com/reference.html#map-constructor" target="_blank">L.Map()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#map-set-methods" target="_blank">map.setView()</a></code></li>
           <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/basemap-layer.html" target="_blank">L.esri.basemapLayer()</a></code></li>
         </ul>
       </div> <!-- /data -->
       
       <div id="map-area" class="col-md-6 pull-right">
         <div id="map"></div>
-
-        <div id="basemaps-wrapper" class="leaflet-bar">
-          <select name="basemaps" id="basemaps">
-            <option value="Topographic">Topographic<options>
-            <option value="Streets">Streets</option>
-            <option value="NationalGeographic">National Geographic<options>
-            <option value="Oceans">Oceans<options>
-            <option value="Gray">Gray<options>
-            <option value="DarkGray">Dark Gray<options>
-            <option value="Imagery">Imagery<options>
-            <option value="ShadedRelief">Shaded Relief<options>
-          </select>
-        </div>
       </div>  <!-- /.map-area -->
     </div> <!-- row -->
 
@@ -158,7 +138,7 @@
     /*******************************
       Map stuff
     *******************************/
-  // initialize the map
+    // initialize the map
     var map = L.map('map', {
       scrollWheelZoom: true,
       minZoom: 5,
@@ -168,26 +148,10 @@
  
     // set the position and zoom level of the map
     map.setView([39.88721, -0.08445], 6);
-
     // Nothing happens so far. Map is empty
 
     // Initialize default base map and add it to the map
-    var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
-  
-    function updateBasemap(basemap) {
-      if (baseLayer) {
-        map.removeLayer(baseLayer);
-      }
-      
-      baseLayer = L.esri.basemapLayer(basemap);
-      map.addLayer(baseLayer);
-    }
-
-    // Jquery to handle events 
-    $("#basemaps").bind("change", function() {
-      updateBasemap($(this).val());
-    });  
-  
+    L.esri.basemapLayer('Streets').addTo(map);
 
   </script>
 </body>
