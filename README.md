@@ -42,4 +42,8 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 Empezando con la problema/idea, al diseño del interfaz de usuario, delimitnado luego las caracteriticas esenciales, hasta la progrmacion de una aplicación web de mapas básica pero funcional en menso de 100 lineas de código en total
 
 
+## Licencia
+...
+
+
 
