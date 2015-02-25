@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-	<title>Basics on web mapping programming</title>
+	<title>Especialización UOC: Programación de SIG</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -69,10 +69,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html">Course web mapping</a>
+        <a class="navbar-brand" href="../index.html">Inicio</a>
       </div>  <!-- /.navbar-header -->
       <div class="navbar-collapse collapse">
-
+        <ul class="nav navbar-nav">
+          <!-- Leaflet menu item -->
+          <li><a target="_blank" href="http://leafletjs.com/" data-toggle="collapse" data-target=".navbar-collapse.in">
+           <i class="fa fa-leaf white"></i>&nbsp;Leaflet.js</a></li>
+        </ul>
       </div>  <!--/.navbar-collapse -->
     </div>  <!-- /.container -->
   </div>  <!-- /.navbar-->
@@ -140,9 +144,7 @@
     });
  
     // set the position and zoom level of the map
-    map.setView([39.88721, -0.08445], 8);
-
-    // Nothing happens so far. Map is empty
+    map.setView([39.88721, -0.08445], 10);
 
     var osmAttribution = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
     var osmBWLayer = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
@@ -151,11 +153,11 @@
     }).addTo(map);  // make it the active, default base layer on the map
 
     
-    // First input paramenter is nul becuase data is loaded later from a file 
-    var librariesLayer = L.geoCsv(null, {
-      titles: ['denominación','dirección','distrito.postal','localidad','provincia','ccaa','país','teléfono','fax','correo.electrónico','dir','request','lon','lat','address'],
+    // First input paramenter is null becuase data is loaded later from a file 
+    var busStopsLayer = L.geoCsv(null, {
+      titles: ['id','address','code','name','nextbuses','lon','lat'],
       firstLineTitles: true, 
-      fieldSeparator: ';',
+      fieldSeparator: ',',
       lineSeparator: '\n',
       latitudeTitle: 'lat',
       longitudeTitle: 'lon',
@@ -166,13 +168,13 @@
     $.ajax ({
       type:'GET',
       dataType:'text',
-      url:'/data/bibliotecas-CS.csv',
+      url:'/data/bus_stops1.csv',
       error: function() {
         alert('No se pudieron cargar los datos');
       },
       success: function(csv) {
-        librariesLayer.addData(csv);
-        map.addLayer(librariesLayer);
+        busStopsLayer.addData(csv);
+        map.addLayer(busStopsLayer);
       }
     });
 
@@ -184,13 +186,14 @@
     
     // List of overlayers
     var overlayers = {
-      "Bibliotecas": librariesLayer
+      "Bus Stops 1": busStopsLayer
     };
 
     // Create layer control 
     var layerControl = L.control.layers(baselayers, overlayers, {
       position: 'topright'
     });
+
     // add layer control to the map
     map.addControl(layerControl);
   </script>

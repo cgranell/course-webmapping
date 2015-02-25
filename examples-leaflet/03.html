@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
 <head>
-	<title>Basics on web mapping programming</title>
+	<title>Especialización UOC: Programación de SIG</title>
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
@@ -69,10 +69,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../index.html">Course web mapping</a>
+        <a class="navbar-brand" href="../index.html">Inicio</a>
       </div>  <!-- /.navbar-header -->
       <div class="navbar-collapse collapse">
-
+        <ul class="nav navbar-nav">
+          <!-- Leaflet menu item -->
+          <li><a target="_blank" href="http://leafletjs.com/" data-toggle="collapse" data-target=".navbar-collapse.in">
+           <i class="fa fa-leaf white"></i>&nbsp;Leaflet.js</a></li>
+        </ul>
       </div>  <!--/.navbar-collapse -->
     </div>  <!-- /.container -->
   </div>  <!-- /.navbar-->
@@ -84,7 +88,7 @@
         <h3>Carga datos desde una variable como una capa geojson</h3>
           <dl class="dl-vertical">
             <dt>Extensión Leaflet (plugin)</dt>
-            <dd>Una extensión se impornte como cualquier fichero JS mediante <code>script</code>, justo después de importar el fichero de Leaflet.</dd>
+            <dd>Una extensión se importa como cualquier fichero JS mediante <code>script</code>, justo después de importar el fichero de Leaflet.</dd>
             <dt>Variable local con datos csv</dt>
             <dd>Cada línea es un marker, separada por <code>\n</code>.</dd>
             <dt>Carga de datos como capa geojson</dt>
@@ -131,7 +135,7 @@
     /*******************************
       Map stuff
     *******************************/
-  // initialize the map
+    // initialize the map
     var map = L.map('map', {
       scrollWheelZoom: true,
       minZoom: 5,
@@ -140,9 +144,7 @@
     });
  
     // set the position and zoom level of the map
-    map.setView([39.88721, -0.08445], 8);
-
-    // Nothing happens so far. Map is empty
+    map.setView([39.88721, -0.08445], 10);
 
     var osmAttribution = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
     var osmBWLayer = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
@@ -151,17 +153,18 @@
     }).addTo(map);  // make it the active, default base layer on the map
 
     
-    var csvdata = "Agencia de Lectura Municipal de Aín;-0.3410107;39.9001543\n" +
-      "Agencia de Lectura Municipal de Alcossebre;0.2235145;40.3042881\n" +
-      "Biblioteca Pública Municipal de Alcalà de Xivert;0.2265823;40.3059644\n" +
-      "Agencia de Lectura Municipal de Alcudia de Veo;-0.3553414;39.9162477\n" +
-      "Agencia de Lectura Municipal de Algimia de Almonacid;-0.4446292;39.9133031\n";
+    var csvdata = "Pza. País Valenciá,-0.041783,39.980564\n" +
+      "Pza. Mª Agustina (Gobernador),-0.034112,39.987907\n" +
+      "Pza. Fadrell,-0.036077,39.981743\n" +
+      "Gobernador (Pza. Cardona Vives),-0.034401,39.985843\n" +
+      "Av. Casalduch (Colegio Carmelitas),-0.038507,39.979697";
+
 
     // First input parameter is the cvs content  
-    var librariesLayer = L.geoCsv(csvdata, {
-      titles: ['denominación', 'lon','lat'],
+    var busStopsLayer = L.geoCsv(csvdata, {
+      titles: ['name', 'lon','lat'],
       firstLineTitles: false, 
-      fieldSeparator: ';',
+      fieldSeparator: ',',
       lineSeparator: '\n',
       latitudeTitle: 'lat',
       longitudeTitle: 'lon',
@@ -169,8 +172,7 @@
     });
 
     
-    //librariesLayer.addData(csv);
-    map.addLayer(librariesLayer);
+    map.addLayer(busStopsLayer);
     
     // List of basemap layers
     var baselayers = {
@@ -179,7 +181,7 @@
     
     // List of overlayers
     var overlayers = {
-      "Bibliotecas": librariesLayer
+      "Bus Stops 1": busStopsLayer
     };
 
     // Create layer control 
