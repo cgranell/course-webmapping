@@ -84,8 +84,8 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>08 <span class="text-info">Capas vectoriales (geojson)</span></h2>
-        <h3>Cambiar simbología de una geometría (puntos)</h3>
+        <h2>09 <span class="text-info">Capas vectoriales (geojson)</span></h2>
+        <h3>Carga datos (líneas) desde un fichero local</h3>
           <dl class="dl-vertical">
             <dt>Configurar una capa geojson</dt>
             <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro esta vez es <code>null</code>, porque la capa de datos se carga a posteriori cuando se lee. El segundo parámetro define un objeto de configuración. </dd>
@@ -149,19 +149,16 @@
       maxZoom: 18
     }).addTo(map);  // make it the active, default base layer on the map
 
-    
-    var busStopsLayer = L.geoJson(null, {
-      // PointToLayer applies style to markers
-      pointToLayer: function (feature, latlng) {
-        return L.circleMarker(latlng, {
-          radius: 6,
-          fillColor: "green",
-          color: "#000",
-          weight: 2,
-          opacity: 1,
-          fillOpacity: 0.5
-        })
-      },
+
+    var busLineLayer = L.geoJson(null, {
+      // style: function (feature) {
+      //   return {
+      //     color: "black",
+      //     fill: false,
+      //     opacity: 1,
+      //     clickable: false
+      //   };
+      // },  
       onEachFeature: function (feature, layer) {
         if (feature.properties && feature.properties.name) {
           layer.bindPopup(feature.properties["name"]);
@@ -170,8 +167,8 @@
     });
 
     // Load (JQuery) a JSON  file 
-    $.getJSON("/data/bus_stops1.json", function (data) {
-      busStopsLayer.addData(data);
+    $.getJSON("/data/bus_line1.json", function (data) {
+      busLineLayer.addData(data);
     });
 
 
@@ -185,7 +182,7 @@
     
     // List of overlayers
     var overlayers = {
-      "Bus Stops 1": busStopsLayer
+      "Bus Line 1": busLineLayer
     };
 
     // Create layer control 
