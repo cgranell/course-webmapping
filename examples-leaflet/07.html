@@ -88,15 +88,15 @@
         <h3>Carga datos (puntos/markers) desde un fichero como una capa geojson</h3>
           <dl class="dl-vertical">
             <dt>Configurar una capa geojson</dt>
-            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro esta vez es <code>null</code>, porque la capa de datos se carga a posteriori cuando se lee. El segundo parámetro define un objeto de configuración. </dd>
+            <dd>Se llama a <code>L.geoJson()</code>. El primer parámetro esta vez es <code>null</code>, porque la capa de datos se carga <em>a posteriori</em> cuando se lee. El segundo parámetro define un objeto de configuración del tipo <a href="http://leafletjs.com/reference.html#geojson-options" target="_blank">GeoJSON options</a>.</dd>
             <dt>Cargar data desde un fichero</dt>
-            <dd>Se leen los datos del fichero mediante JQuery mediante <code>$.ajax()</code>. En caso de éxito, se cargan los datos leídos en la capa <code>busStopsLayer</code> mediante <code>layer.addData()</code>, y se añade al mapa con <code>map.addLayer()</code>.</dd>
+            <dd>Se leen los datos del fichero mediante <code>$.getJSON()</code> de JQuery . En caso de éxito, se cargan los datos leídos en la capa <code>busStopsLayer</code> llamando a <code>layer.addData()</code>, y se añade al mapa con <code>map.addLayer()</code>.</dd>
           </dl>
          <h3>Más info</h3>
         <ul>
-          <li><code><a href="https://github.com/joker-x/Leaflet.geoCSV" target="_blank">L.geoCsv()</a></code></li>
-          <li><code><a href="http://api.jquery.com/jQuery.ajax/" target="_blank">$.ajax()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#geojson" target="_blank">layer.addData()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#geojson" target="_blank">L.geoJson()</a></code></li>
+          <li><code><a href="http://api.jquery.com/jquery.getjson/" target="_blank">$.getJSON()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#geojson-adddata" target="_blank">layer.addData()</a></code></li>
           
         </ul>
       </div> <!-- /data -->
@@ -151,14 +151,6 @@
 
     
     var busStopsLayer = L.geoJson(null, {
-      // style: function (feature) {
-      //   return {
-      //     color: "black",
-      //     fill: false,
-      //     opacity: 1,
-      //     clickable: false
-      //   };
-      // },  
       onEachFeature: function (feature, layer) {
         if (feature.properties && feature.properties.name) {
           layer.bindPopup(feature.properties["name"]);
@@ -169,11 +161,9 @@
     // Load (JQuery) a JSON  file 
     $.getJSON("/data/bus_stops1.json", function (data) {
       busStopsLayer.addData(data);
+      map.addLayer(busStopsLayer);
     });
 
-
-    // To make layer visible by default. Otherwise, it is made visiable using the layer control
-    //map.addLayer(busStopsLayer);
     
     // List of basemap layers
     var baselayers = {

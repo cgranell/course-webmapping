@@ -87,15 +87,14 @@
         <h2>06 <span class="text-info">Capas vectoriales (geojson)</span></h2>
         <h3>Carga datos (puntos/markers) desde una variable local como una capa geojson</h3>
           <dl class="dl-vertical">
-            <dt>Declarar variable local con datos csv</dt>
-            <dd>El valor de la variable <code>geojsonData</code> es una parada de autobus. Cada una de las paradas está separada por <code>\n</code>, y cada uno de los attributos de una parada esta separado por comas</dd>
-            <dt>Cargar la varaible local como una capa geojson</dt>
-            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro es el contenido de la variable local (los datos), y el segundo parámetro define un objeto de configuración. Una vez la capa está cargada, se añade al mapa con <code>map.addLayer()</code>.</dd>
+            <dt>Declarar variable local con datos geojson</dt>
+            <dd>El valor de la variable <code>geojsonData</code> es una parada de autobus en formato geojson.</dd>
+            <dt>Cargar la variable local como una capa geojson</dt>
+            <dd>Se llama a <code>L.geoJson()</code>. El primer parámetro es el contenido de la variable local (los datos), y el segundo parámetro (opcional) define un objeto de configuración del tipo <a href="http://leafletjs.com/reference.html#geojson-options" target="_blank">GeoJSON options</a>. Una vez la capa está cargada, se añade al mapa con <code>layer.addTo(map)</code>.</dd>
           </dl>
          <h3>Más info</h3>
         <ul>
-          <li><code><a href="https://github.com/joker-x/Leaflet.geoCSV" target="_blank">L.geoCsv()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#map-stuff-methods" target="_blank">map.addLayer()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#geojson" target="_blank">L.geoJson()</a></code></li>
         </ul>
       </div> <!-- /data -->
       
