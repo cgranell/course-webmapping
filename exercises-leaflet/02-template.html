@@ -78,7 +78,7 @@
 
       onEachFeature: function (feature, layer) {
         if (feature.properties && feature.properties.name) {
-          layer.bindPopup(feature.properties["name"]);
+          layer.bindPopup("Ahora debes cambiar el circulo por un icono de autobus!");
         }
       }
     });
@@ -86,11 +86,9 @@
     // Load (JQuery) a JSON  file 
     $.getJSON("/data/bus_stops1.json", function (data) {
       busStopsLayer.addData(data);
+      map.addLayer(busStopsLayer);
     });
 
-
-    // To make layer visible by default. Otherwise, it is made visiable using the layer control
-    //map.addLayer(busStopsLayer);
     
     // List of basemap layers
     var baselayers = {
