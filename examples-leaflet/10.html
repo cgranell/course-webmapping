@@ -85,18 +85,16 @@
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
         <h2>10 <span class="text-info">Capas vectoriales (geojson)</span></h2>
-        <h3>Cambiar simbología de una geometría (lineas)</h3>
+        <h3>Cambiar simbología de una geometría (líneas)</h3>
           <dl class="dl-vertical">
-            <dt>Configurar una capa geojson</dt>
-            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro esta vez es <code>null</code>, porque la capa de datos se carga a posteriori cuando se lee. El segundo parámetro define un objeto de configuración. </dd>
-            <dt>Cargar data desde un fichero</dt>
-            <dd>Se leen los datos del fichero mediante JQuery mediante <code>$.ajax()</code>. En caso de éxito, se cargan los datos leídos en la capa <code>busStopsLayer</code> mediante <code>layer.addData()</code>, y se añade al mapa con <code>map.addLayer()</code>.</dd>
+            <dt>Declarar el objeto de configuración</dt>
+            <dd>Una de las propiedades del objeto de configuración que se puede declarar cuando se invoca a <code>L.geoJson()</code> es <code>style</code>. Su valor es una función del tipo <code>function (feature, latlng) {}</code>. Esta función se llama por cada <em>feature</em> o geometría de tipo línea, y permite cambiar la simbología de la geometría, como por ejemplo el color o groso de la línea. <span class="text-warning">Atención: No confundir con <code>pointToLayer</code>, que realiza la misma función que <code>style</code> pero para geometrías de tipo punto (markers)</span>.
           </dl>
          <h3>Más info</h3>
         <ul>
           <li><code><a href="https://github.com/joker-x/Leaflet.geoCSV" target="_blank">L.geoCsv()</a></code></li>
-          <li><code><a href="http://api.jquery.com/jQuery.ajax/" target="_blank">$.ajax()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#geojson" target="_blank">layer.addData()</a></code></li>
+          <li><code><a href="http://api.jquery.com/jquery.getjson/" target="_blank">$.getJSON()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#geojson-adddata" target="_blank">layer.addData()</a></code></li>
           
         </ul>
       </div> <!-- /data -->
@@ -170,12 +168,10 @@
     // Load (JQuery) a JSON  file 
     $.getJSON("/data/bus_line1.json", function (data) {
       busLineLayer.addData(data);
+      map.addLayer(busLineLayer);
     });
 
 
-    // To make layer visible by default. Otherwise, it is made visiable using the layer control
-    //map.addLayer(busStopsLayer);
-    
     // List of basemap layers
     var baselayers = {
       "OSM.Black&White": osmBWLayer
