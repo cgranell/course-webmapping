@@ -88,11 +88,11 @@
         <h3>Control de capas para la selección de mapas base</h3>
           <dl class="dl-vertical">
             <dt>Declarar varios mapas base</dt>
-            <dd>Cada mapa base nuevo se declara con <code>L.tileLayer()</code>.</dd>
+            <dd>Cada nuevo mapa base se declara con <code>L.tileLayer()</code>.</dd>
             <dt>Seleccionar el mapa base activo</dt>
-            <dd>El método <code>addMap()</code> añade la capa base al mapa. Si no invocamos un <code>addMap()</code>, el mapa aparece sin ningún mapa base hasta que seleccionamos uno desde el control de capas.</dd>
+            <dd>El método <code>addMap()</code> añade la capa base al mapa. Si no invocamos un <code>addMap()</code>, el mapa base no se añade al mapa hasta que lo seleccionamos desde el control de capas.</dd>
             <dt>Añadir el control de capas al mapa</dt>
-            <dd>El control de mapas gestiona la lista de mapas base y otras capas temáticas. Se crea llamando a <code>L.control.layers()</code> con un objeto <a href="http://leafletjs.com/reference.html#control-layers-config" target="_blank">Layer Config</a> como parámetro de entrada. Este objeto contiene la lista de mapas bases y otras capas que queremos añadir al control. Una vez creado, lo hacemos visible con el método <code>map.addControl()</code>.</dd>
+            <dd>El control de capas gestiona la lista de mapas base y otras capas temáticas. Se crea llamando a <code>L.control.layers()</code> con un objeto <a href="http://leafletjs.com/reference.html#control-layers-config" target="_blank">Layer Config</a> como parámetro de entrada. Este objeto contiene la lista de mapas bases y otras capas que queremos añadir al control. Una vez creado, lo hacemos visible con el método <code>map.addControl()</code>.</dd>
           </dl>
          <h3>Más info</h3>
         <ul>
