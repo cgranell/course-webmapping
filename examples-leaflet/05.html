@@ -88,9 +88,9 @@
         <h3>Muestra (popups) los atributos de una geometría (puntos/markers)</h3>
           <dl class="dl-vertical">
             <dt>Declarar el objeto de configuración</dt>
-            <dd>Una de las propiedades del objeto de configuración que se puede declara cuando se invoca a <code>L.geoCsv()</code> es <code>OnEachFeature</code>. Su valor es una función del tipo <code>function (feature, layer) {} </code>. Esta función se llama por cada <em>feature</em> o geometría (punto, línea, etc.) se llama a <code>OnEachFeature</code> antes de cargarse los datos en la capa. 
+            <dd>Una de las propiedades del objeto de configuración que se puede declarar cuando se invoca a <code>L.geoCsv()</code> es <code>OnEachFeature</code>. Su valor es una función del tipo <code>function (feature, layer) {} </code>. Esta función se llama por cada <em>feature</em> o geometría (punto, línea, etc.) antes de cargarse los datos en la capa. 
             <dt>Acceder a los attributos de una geometría</dt>
-            <dd>Desde dentro de la función <code>function (feature, layer) {} </code> se acceden a los attributos associados a una geometría. El objeto <code>feature.properties</code> cotntien todos los atributos. 
+            <dd>Desde dentro de la función <code>function (feature, layer) {} </code> se acceden a los attributos associados a una geometría. El objeto <code>feature.properties</code> contiene todos los atributos. 
             <dt>Mostrar atributos de una geometría</dt>
             <dd>Al mismo tiempo que se acceden a los atributos de una geometría, es posible crear un texto personalizado y enlazarlo mediante <code>layer.bindPopup()</code> a una ventana emergente o <em>popup</em> al hacer click sobre la geometría.</dd>
           </dl>
