@@ -85,14 +85,14 @@
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
         <h2>04 <span class="text-info">Capas vectoriales (csv)</span></h2>
-        <h3>Carga datos desde ficheros como una capa geojson</h3>
+        <h3>Carga datos (csv) desde un fichero como una capa geojson</h3>
           <dl class="dl-vertical">
-            <dt>Configuración de una capa geojson</dt>
-            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro esta vez es null, porque la capa de datos se hace a posteriori, y el segundo parámetro define un objeto de configuración. </dd>
-            <dt>Carga de datos a un capa geojson</dt>
-            <dd>Se leen los datos del fichero mediante JQuery mediante <code>$.ajax()</code>. Si no se producen errores, entonces se cargan los datos en la capa mediante <code>layer.addData()</code>,y se añade al mapa con <code>map.addLayer()</code>.</dd>
+            <dt>Configurar una capa geojson</dt>
+            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro esta vez es <code>null</code>, porque la capa de datos se carga a posteriori cuando se lee. El segundo parámetro define un objeto de configuración. </dd>
+            <dt>Cargar data desde un fichero</dt>
+            <dd>Se leen los datos del fichero mediante JQuery mediante <code>$.ajax()</code>. En caso de éxito, se cargan los datos leídos en la capa <code>busStopsLayer</code> mediante <code>layer.addData()</code>, y se añade al mapa con <code>map.addLayer()</code>.</dd>
           </dl>
-         <h3>Key methods</h3>
+         <h3>Más info</h3>
         <ul>
           <li><code><a href="https://github.com/joker-x/Leaflet.geoCSV" target="_blank">L.geoCsv()</a></code></li>
           <li><code><a href="http://api.jquery.com/jQuery.ajax/" target="_blank">$.ajax()</a></code></li>
@@ -153,7 +153,7 @@
     }).addTo(map);  // make it the active, default base layer on the map
 
     
-    // First input paramenter is null becuase data is loaded later from a file 
+    // First input parameter is null because data is loaded later from a file 
     var busStopsLayer = L.geoCsv(null, {
       titles: ['id','address','code','name','nextbuses','lon','lat'],
       firstLineTitles: true, 

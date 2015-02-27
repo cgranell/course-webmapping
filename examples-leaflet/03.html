@@ -85,16 +85,16 @@
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
         <h2>03 <span class="text-info">Capas vectoriales (csv)</span></h2>
-        <h3>Carga datos desde una variable como una capa geojson</h3>
+        <h3>Carga datos (csv) desde una variable local como una capa geojson</h3>
           <dl class="dl-vertical">
-            <dt>Extensión Leaflet (plugin)</dt>
-            <dd>Una extensión se importa como cualquier fichero JS mediante <code>script</code>, justo después de importar el fichero de Leaflet.</dd>
-            <dt>Variable local con datos csv</dt>
-            <dd>Cada línea es un marker, separada por <code>\n</code>.</dd>
-            <dt>Carga de datos como capa geojson</dt>
-            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro es el contenido de la variable anterior, y el segundo parámetro define un objeto de configuración. Una vez la capa cargada y configurada, se añade al mapa con <code>map.addLayer()</code>.</dd>
+            <dt>Importar Leaflet plugin</dt>
+            <dd>Una extensión (plugin) se importa como cualquier fichero JavaScript mediante <code>script</code> en la página HTML, justo después de importar la librería Leaflet.</dd>
+            <dt>Declarar variable local con datos csv</dt>
+            <dd>El valor de la variable <code>csvData</code> es una lista de paradas de autobus. Cada una de las paradas está separada por <code>\n</code>, y cada uno de los attributos de una parada esta separado por comas</dd>
+            <dt>Cargar la varaible local como una capa geojson</dt>
+            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro es el contenido de la variable local (los datos), y el segundo parámetro define un objeto de configuración. Una vez la capa está cargada, se añade al mapa con <code>map.addLayer()</code>.</dd>
           </dl>
-         <h3>Key methods</h3>
+         <h3>Más info</h3>
         <ul>
           <li><code><a href="https://github.com/joker-x/Leaflet.geoCSV" target="_blank">L.geoCsv()</a></code></li>
           <li><code><a href="http://leafletjs.com/reference.html#map-stuff-methods" target="_blank">map.addLayer()</a></code></li>
@@ -153,7 +153,7 @@
     }).addTo(map);  // make it the active, default base layer on the map
 
     
-    var csvdata = "Pza. País Valenciá,-0.041783,39.980564\n" +
+    var csvData = "Pza. País Valenciá,-0.041783,39.980564\n" +
       "Pza. Mª Agustina (Gobernador),-0.034112,39.987907\n" +
       "Pza. Fadrell,-0.036077,39.981743\n" +
       "Gobernador (Pza. Cardona Vives),-0.034401,39.985843\n" +
@@ -161,7 +161,7 @@
 
 
     // First input parameter is the cvs content  
-    var busStopsLayer = L.geoCsv(csvdata, {
+    var busStopsLayer = L.geoCsv(csvData, {
       titles: ['name', 'lon','lat'],
       firstLineTitles: false, 
       fieldSeparator: ',',
