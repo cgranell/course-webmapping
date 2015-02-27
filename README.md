@@ -1,4 +1,4 @@
-# Programación de aplicaciones web de mapas
+# B2.180 - Programación de aplicaciones web de mapas
 
 Esta asignatura de cuatro semanas forma parte de la especialziación de [Programación de sistemas de información geográfica](http://estudios.uoc.edu/es/masters-posgrados-especializaciones/especializacion/informatica-multimedia-telecomunicacion/programacion-desarrollo-sistemas-informacion-geografica/), de la [UOC]. 
 
