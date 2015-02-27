@@ -87,9 +87,13 @@
         <h2>05 <span class="text-info">Capas vectoriales (csv)</span></h2>
         <h3>Muestra (popups) los atributos de una geometría (puntos/markers)</h3>
           <dl class="dl-vertical">
-            <dt>onEachFeature</dt>
-            <dd>Por cada feature (puntos, polígonos, etc) se llama a <code>OnEachFeature</code> antes de cargarse los datos en la capa. Es dentro de esta función donde se peuden leer los campos associadoas a una feature y generar contenido que se puede mostrar como un popup mendiante <code>layer.bindPopup()</code>.</dd>
-            dl>
+            <dt>Declarar el objeto de configuración</dt>
+            <dd>Una de las propiedades del objeto de configuración que se puede declara cuando se invoca a <code>L.geoCsv()</code> es <code>OnEachFeature</code>. Su valor es una función del tipo <code>function (feature, layer) {} </code>. Esta función se llama por cada <em>feature</em> o geometría (punto, línea, etc.) se llama a <code>OnEachFeature</code> antes de cargarse los datos en la capa. 
+            <dt>Acceder a los attributos de una geometría</dt>
+            <dd>Desde dentro de la función <code>function (feature, layer) {} </code> se acceden a los attributos associados a una geometría. El objeto <code>feature.properties</code> cotntien todos los atributos. 
+            <dt>Mostrar atributos de una geometría</dt>
+            <dd>Al accede a los atributos de uan gemetria, es posible crear un texto personalizado y enlazar mediante <code>layer.bindPopup()</code> a una ventana emergente o <em>popup</em> al hacer click sobre la geometría.</dd>
+          </dl>
          <h3>Más info</h3>
         <ul>
           <li><code><a href="http://leafletjs.com/reference.html#geojson" target="_blank">onEachFeature</a></code></li>
@@ -164,11 +168,7 @@
       onEachFeature: function (feature, layer) {
         var content = '';
         if (feature.properties) {
-          content = "<b>Nombre</b>: " + feature.properties["name"];
-          // for (var key in feature.properties) {
-          //   var title = busStopsLayer.getPropertyTitle(key);
-          //   content += '<b>' + title + ':</b> ' + feature.properties[key] + '<br />';
-          // }  
+          content = "<b>Nombre</b>: " + feature.properties["name"]; 
         }
         layer.bindPopup(content);
       }  
@@ -183,13 +183,8 @@
         alert('No se pudieron cargar los datos');
       },
       success: function(csv) {
-        //var cluster = new L.MarkerClusterGroup();
-
         busStopsLayer.addData(csv);
         map.addLayer(busStopsLayer);
-        //cluster.addLayer(bankias);
-        //mapa.addLayer(cluster);
-        //mapa.fitBounds(cluster.getBounds());
       }
     });
 

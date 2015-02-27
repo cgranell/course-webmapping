@@ -88,10 +88,10 @@
         <h3>Carga datos (puntos/markers) desde una variable local como una capa geojson</h3>
           <dl class="dl-vertical">
             <dt>Importar Leaflet plugin</dt>
-            <dd>Una extensión (plugin) se importa como cualquier fichero JavaScript mediante <code>script</code> en la página HTML, justo después de importar la librería Leaflet.</dd>
+            <dd>Una extensión (plugin) se importa como cualquier fichero JavaScript: mediante la etiqueta <code>script</code> en la página HTML, justo después de importar la librería Leaflet.</dd>
             <dt>Declarar variable local con datos csv</dt>
-            <dd>El valor de la variable <code>csvData</code> es una lista de paradas de autobus. Cada una de las paradas está separada por <code>\n</code>, y cada uno de los attributos de una parada esta separado por comas</dd>
-            <dt>Cargar la varaible local como una capa geojson</dt>
+            <dd>El valor de la variable <code>csvData</code> es una lista de paradas de autobus. Los datos de cada parada de bus van en una línea (incluir <code>\n</code> al final), y cada uno de los attributos de una parada se separada mediante comas.</dd>
+            <dt>Cargar la variable local como una capa geojson</dt>
             <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro es el contenido de la variable local (los datos), y el segundo parámetro define un objeto de configuración. Una vez la capa está cargada, se añade al mapa con <code>map.addLayer()</code>.</dd>
           </dl>
          <h3>Más info</h3>
