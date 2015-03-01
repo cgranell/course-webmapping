@@ -85,7 +85,7 @@
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
         <h2>03 <span class="text-info">Capas vectoriales</span></h2>
-        <h3>Carga de datos desde servicios web ArcGIS</h3>
+        <h3>Carga de datos desde un servicio web ArcGIS</h3>
           <dl class="dl-vertical">
             <dt>Recentrar el mapa base y ajuste zoom<dt>
             <dd>Ajuste de los parámetros de entrada del método <code>map.setView()</code>. 
@@ -152,7 +152,7 @@
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
     // Access to a feature layer and add it to the map
-    var urlFeatureLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/1"; 
+    var urlFeatureLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0"; 
     L.esri.featureLayer(urlFeatureLayer).addTo(map);
 
   </script>
