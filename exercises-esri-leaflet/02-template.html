@@ -40,7 +40,7 @@
 </head>
 <body>
   <div id="map"></div>
-  <div id="info-pane" class="leaflet-bar">Añade dos capas de features al mapa!</div>
+  <div id="info-pane" class="leaflet-bar">Añade un popup personalizado para mostrar el tipo de contenido o parking!</div>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -74,13 +74,24 @@
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
 
+    map.on('click', function(e){
+      var marker = new L.marker(e.latlng).addTo(map);
+      marker.bindPopup("Add two features layers to the map!").openPopup();
+    });
+
     // Access to a feature layer about Containers and add it to the map
     // Url: http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0
 
 
     // Access to a feature layer about ParkingPoints and add it to the map
     // Url: http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/1
-        
+
+
+    // Show a custom popup to display the type of Containers 
+
+
+    // Show a custom popup to display the type of ParkingPoints 
+    
 
   </script>
 </body>
