@@ -84,8 +84,8 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>04 <span class="text-info">Capas vectoriales</span></h2>
-        <h3>Muestra (popups) atributos de una geometría (puntos/markers)</h3>
+        <h2>05 <span class="text-info">Capas vectoriales</span></h2>
+        <h3>Cambiar simbología de una geometría (punto)</h3>
           <dl class="dl-vertical">
             <dt>Recentrar el mapa base y ajuste zoom<dt>
             <dd>Ajuste de los parámetros de entrada del método <code>map.setView()</code>. 
@@ -146,22 +146,41 @@
     // set the position and zoom level of the map. Now it is centred in Universitat Jaume I, Castellón
     map.setView([39.994, -0.06907], 15);
 
-    // Nothing happens so far. Map is empty
 
     // Initialize default base map and add it to the map
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
-    // Access to a feature layer and add it to the map
+    var containerIcons = {
+      1: L.icon({
+        iconUrl: "../assets/images/container-organic.png",
+        iconSize: [27, 31],
+        iconAnchor: [13.5, 17.5],
+        popupAnchor: [0, -11],
+      })
+    };
+
+
+    // Access to a feature layer, stylish it and add to the map
     var urlFeatureLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0"; 
-    var containersLayer = L.esri.featureLayer(urlFeatureLayer).addTo(map);
+    L.esri.featureLayer(urlFeatureLayer , {
+      pointToLayer: function(feature, latlng) {
+        if (feature.properties.RuleID === 1) {
+          return L.marker(latlng, {
+            icon: containerIcons[feature.properties.RuleID]
+          });  
+        } else {
+          return L.marker(latlng);
+        }
+      },
+      onEachFeature: function (feature, layer) {
+        var content = '';
+        if (feature.properties) {
+          content = "<b>Typo</b>: " + feature.properties.RuleID; 
+        }
+        layer.bindPopup(content);
+      }  
+    }).addTo(map);
 
-    // Show a custom popup
-    containersLayer.bindPopup(function (feature) {
-      if (feature.properties) {
-        return L.Util.template('<h3>Container</h3><p>Type: {RuleID}<br>Floor: {FLOOR}</p>', feature.properties);
-      }
-    });
-
-  </script>
+   </script>
 </body>
 </html>
