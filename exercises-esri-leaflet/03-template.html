@@ -40,7 +40,7 @@
 </head>
 <body>
   <div id="map"></div>
-  <div id="info-pane" class="leaflet-bar">Añade estilo personalizado por el tipo de container o parking!</div>
+  <div id="info-pane" class="leaflet-bar">Añade estilo personalizado por el tipo de feature "container" y "parking"!</div>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -73,6 +73,7 @@
     // Initialize default base map and add it to the map
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
+    // Custom icons for types of Containers
     var containerIcons = {
       1: L.icon({
         iconUrl: "../assets/images/container-organic.png",
@@ -87,6 +88,7 @@
     // Access to a feature layer about Containers and add it to the map
     var urlContainersLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0"; 
 
+    // Custom icons for types fo ParkingPoints
     var parkingIcons = {
       2: L.icon({
         iconUrl: "../assets/images/parking-bicicas.png",

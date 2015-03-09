@@ -40,7 +40,7 @@
 </head>
 <body>
   <div id="map"></div>
-  <div id="info-pane" class="leaflet-bar">Añade un popup personalizado para mostrar el tipo de feature "container" o parking!</div>
+  <div id="info-pane" class="leaflet-bar">Click sobre el mapa para más detalles</div>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -53,6 +53,7 @@
 
   <!-- Load Esri Leaflet from CDN -->
   <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.5/esri-leaflet.js"></script>
+
 
   <!-- JS script code -->
   <script type="text/javascript">
@@ -74,18 +75,20 @@
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
 
-    // Access to a feature layer about Containers and add it to the map
-    var urlContainersLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0";
-     
 
-    // Access to a feature layer about ParkingPoints and add it to the map
-    var urlParkingPointsLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/1";
-
-
-    // Show a custom popup to display the type of Containers 
-
-
-    // Show a custom popup to display the type of ParkingPoints 
+    map.on('click', function(e){
+      var marker = new L.marker(e.latlng).addTo(map);
+      var content  = "<b>Proyecto final</b>: <br/>" +
+        "Combina varias funcionalidades en menos de 100 líneas de código. Por ejemplo: " +
+        "<ul>" +
+        "<li>Incluye un control de capas." + "</li>" +
+        "<li>Accede a varias capas de datos (los que quieras)." + "</li>" +
+        "<li>Añade simbología personaliza a los datos (puntos, líneas)." + "</li>" +
+        "<li>Uso de popups para mostrar información asociada a la geometría (puntos, líneas)." + "</li>" +
+        "<li>Uso de al menos una operación espacial (clustering, heatmap)." + "</li>" +
+        "</ul>";
+      marker.bindPopup(content).openPopup();
+    });
     
 
   </script>

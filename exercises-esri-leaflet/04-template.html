@@ -40,7 +40,7 @@
 </head>
 <body>
   <div id="map"></div>
-  <div id="info-pane" class="leaflet-bar">Añade un popup personalizado para mostrar el tipo de feature "container" o parking!</div>
+  <div id="info-pane" class="leaflet-bar">Agrupa y añade estilo personalizado por el tipo de feature "container"</div>
 
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -53,6 +53,16 @@
 
   <!-- Load Esri Leaflet from CDN -->
   <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.5/esri-leaflet.js"></script>
+
+
+  <!-- Include Leaflet.markercluster via rawgit.com, do not use in production -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Leaflet/Leaflet.markercluster/v0.4.0/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Leaflet/Leaflet.markercluster/v0.4.0/dist/MarkerCluster.css">
+  <script src="https://cdn.rawgit.com/Leaflet/Leaflet.markercluster/v0.4.0/dist/leaflet.markercluster.js"></script>
+
+
+  <!-- Load Clustered Feature Layer from CDN -->
+  <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet-clustered-feature-layer/1.0.0-rc.1/esri-leaflet-clustered-feature-layer.js"></script>
 
   <!-- JS script code -->
   <script type="text/javascript">
@@ -73,19 +83,20 @@
     // Initialize default base map and add it to the map
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
+    // Custom icons for types of Containers
+    var containerIcons = {
+      1: L.icon({
+        iconUrl: "../assets/images/container-organic.png",
+        iconSize: [27, 31],
+        iconAnchor: [13.5, 17.5],
+        popupAnchor: [0, -11],
+      })
+      // ...
+    };
 
-    // Access to a feature layer about Containers and add it to the map
-    var urlContainersLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0";
-     
 
-    // Access to a feature layer about ParkingPoints and add it to the map
-    var urlParkingPointsLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/1";
-
-
-    // Show a custom popup to display the type of Containers 
-
-
-    // Show a custom popup to display the type of ParkingPoints 
+    // Access to a clustered feature layer about Containers and add it to the map
+    var urlContainersLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0"; 
     
 
   </script>
