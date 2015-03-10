@@ -35,15 +35,15 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 * 2.5-leaflet (<5min): descripción ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero".
 * 2.6-leaflet (<5min): descripción ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local".
 
-### Semana 3: ESRI Leaflet plugins
+### Semana 3: ESRI Leaflet plugin
 * 3.1-intro (<3 min): presentación contenido semana 
 * 3.2-github (<3 min): navegación por los ejemplos del repositorio. 
 * 3.3.esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
 * 3.4.esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
 * 3.5.esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
 
-### Semana 4: Tu problema, tu solucion (<100 lineas) 
-Implementación por parte de los estudiantes de una aplicación web de mapas como proyecto final de la asignatura. Deberán combinar varias funcionalidades vistas en las semanas previas en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características:
+### Semana 4: Tu problema, tu solución (<100 líneas) 
+Implementación por parte de los estudiantes de una aplicación web de mapas como proyecto final de la asignatura. Los estudiantes podrán definir la temática del proyecto y deberán combinar varias funcionalidades vistas en las semanas previas en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características:
 * Control de capas.
 * Acceso a varias capas de datos (las que quieras).
 * Simbología personalizada de los datos (puntos, líneas).
