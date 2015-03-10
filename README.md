@@ -23,9 +23,9 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 * 1.1-intro (<5 min): presentacion curso y materiales docentes
 * 1.2-viz (<5 min): una mapa es una visualización. Pasos para diseñarla
 * 1.3-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
-* 1.4-js-1 (<5min): Lo básico
-* 1.4-js-2: (5-10 min)Objects, arrays, functions...
-* 1.4-js-3: (<3 min): añadir código javascript a páginas html
+* 1.4-js (<5min): Lo básico
+* 1.5-js (5-10 min): objects, arrays, function...
+* 1.6-js (<3 min): añadir código javascript a páginas html
 
 ### Semana 2: Leaflet.js 
 * 2.1-intro (<3 min): presentación contenido semana
