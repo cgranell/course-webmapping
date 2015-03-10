@@ -13,37 +13,47 @@ Este repositorio complementa las actividades docentes de la asignatura. Aquí pu
 *Inicio asignatura*: Mayo 2015 
 
 ## Objetivos
-El objetivo principal es que los estudiantes conozcan buenas prácticas para la creación de aplicaciones web de mapas. No se trata de aprender programación  en JavaScript (existen montones de tutoriales y recursos en linea para ello), sino de conocer una serie de pasos sencillos para diseñar una visualización, ya que los aplicaciones de mapas son visualizaciones de datos con el fin de informar a su audiencia. 
+El objetivo principal es que los estudiantes conozcan buenas prácticas para la creación de aplicaciones web de mapas. No se trata de aprender programación  en JavaScript (existen montones de tutoriales y recursos en línea para ello), sino de conocer una serie de pasos sencillos para diseñar una visualización, ya que los aplicaciones de mapas son visualizaciones de datos con el fin de informar a su audiencia. 
 
 No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no sobre papel. Veremos qué herramientas de desarrollo web tenemos a nuestro alcance y sobre todo utlizaremos la librería JavaScript [Leaflet.js](http://leafletjs.com/) para la creación de aplicaciones de ejemplo.  
 
 ## Contenido
 
 ### Semana 1: Kit de desarrollo
-* 1.1-intro (<5 min): presentacion curso y contenido semanas
-* 1.2-viz (): una mapa es una visualización. Pasos para diseñarla
-* 1.3-dev-tools (): Sublime Text 3, Chrome, Chrome Dev Tools. 
-* 1.4-js-1: basico...
-* 1.4-js-2: objetcs, arrays, functions...
-* 1.4-js-3: html + javascript
+* 1.1-intro (<5 min): presentacion curso y materiales docentes
+* 1.2-viz (<5 min): una mapa es una visualización. Pasos para diseñarla
+* 1.3-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
+* 1.4-js-1 (<5min): Lo básico
+* 1.4-js-2: (5-10 min)Objects, arrays, functions...
+* 1.4-js-3: (<3 min): añadir código javascript a páginas html
 
 ### Semana 2: Leaflet.js 
-* 2.1-intro (<3 min): presentacion contenido semana
-* 2.2-github (<3 min): Como navegar por los ejemplos del repositorio 
-* 2.3-servicios-geo (<10 min): IDE y Servicios OGC, Open Street Maps, Google Mapas (Jesus), Servicios ESRI and ArcGIs Online (Semana 4). Nota: O integrar con los mini videos sobre leaflet a medida que los services se necesiten 
-* 2.3.leaflet (): mini videos para explicar algunos de los ejemplos del repositorio. El resto para estudio para los estudiantes.
+* 2.1-intro (<3 min): presentación contenido semana
+* 2.2-github (<3 min): navegación por los ejemplos del repositorio. 
+* 2.3-servicios-geo (<5 min): servicios de mapas base como Open Street Maps, Google Maps, Servicios ESRI. 
+* 2.4-leaflet (<5min): descripción ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa".
+* 2.5-leaflet (<5min): descripción ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero".
+* 2.6-leaflet (<5min): descripción ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local".
 
 ### Semana 3: ESRI Leaflet plugins
-* 3.1-intro (<3 min): contenido semana 
-* 3.2-plugin (<5 min): concepto de extension.
-* 3.3.esri-leaflet (): Repositorio de ejemplos
+* 3.1-intro (<3 min): presentación contenido semana 
+* 3.2-github (<3 min): navegación por los ejemplos del repositorio. 
+* 3.3.esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
+* 3.4.esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
+* 3.5.esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
 
 ### Semana 4: Tu problema, tu solucion (<100 lineas) 
-Empezando con la problema/idea, al diseño del interfaz de usuario, delimitnado luego las caracteriticas esenciales, hasta la progrmacion de una aplicación web de mapas básica pero funcional en menso de 100 lineas de código en total
-
+Implementación por parte de los estudiantes de una aplicación web de mapas como proyecto final de la asignatura. Deberán combinar varias funcionalidades vistas en las semanas previas en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características:
+* Control de capas.
+* Acceso a varias capas de datos (las que quieras).
+* Simbología personalizada de los datos (puntos, líneas).
+* Uso de popups para mostrar información asociada a la geometría (puntos, líneas).
+* Uso de al menos una operación espacial (clustering, heatmap).
 
 ## Créditos
 Icons made by [Freepik](http://www.flaticon.com/authors/freepik) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/")
+
+Servicios ArcGIS proporcionados por [UJI Smart Campus](http://smart.uji.es/) 
 
 ## Licencia
 ...
