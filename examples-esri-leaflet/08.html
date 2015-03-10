@@ -87,16 +87,16 @@
         <h2>08 <span class="text-info">Operaciones espaciales</span></h2>
         <h3>Mapas de calor (heatmaps) a partir de geometrias de tipo de punto</h3>
           <dl class="dl-vertical">
-            <dt>Recentrar el mapa base y ajuste zoom<dt>
-            <dd>Ajuste de los parámetros de entrada del método <code>map.setView()</code>. 
-            <dt>Acceso a un servicio ArcGIS</dt>
-            <dd>Con el método <code>L.esri.featureLayer()</code>, se accede a la capa vectorial de puntos (Feature layer) y se añade al mapa con <code>addMap()</code>.</dd>
+            <dt>Importar Leaflet plugin y Esri leaflet plugin</dt>
+            <dd>Como cualquier otros fichero JavaScript, mediante el elemento HTML script. En este caso <code>L.esri.Layers.HeatMapFeatureLayer</code> depende del plugin <code>Leaflet.heat</code>, por lo que hay que añadir ambos en el orden correcto.</dd>
+            <dt>Crear una mapa de calor a partir de geometrías de tipo punto</dt>
+            <dd>Con el método <code>L.esri.heatmapFeatureLayer()</code>, se accede a una capa vectorial de puntos (Feature layer), crea el mapa de calor (heatmap), y se añade al mapa con <code>addTo(map)</code>. Como <code>L.esri.Layers.HeatMapFeatureLayer</code> hereda de <code>L.esri.Layers.FeatureLayer</code>, las propiedades y métodos de este último (<code>pointToLayer</code>, <code>style></code>, <code>onEachFeature</code>, etc.) también se aplican al primero.</dd>
           </dl>
          <h3>Más info</h3>
         <ul>
-          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html" target="_blank">L.esri.featureLayer()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#popup" target="_blank">layer.bindPopup()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#util-template" target="_blank">L.Util.template()</a></code></li>
+          <li><code><a href="https://github.com/Leaflet/Leaflet.heat" target="_blank">Leaflet.heat</a></code></li>
+          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/heatmap-feature-layer.html" target="_blank">L.esri.Layers.HeatMapFeatureLayer</a></code></li>
+          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html" target="_blank">L.esri.Layers.FeatureLayer</a></code></li>
         </ul>
       </div> <!-- /data -->
       

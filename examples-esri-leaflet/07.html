@@ -84,19 +84,19 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>05 <span class="text-info">Operaciones espaciales</span></h2>
+        <h2>07 <span class="text-info">Operaciones espaciales</span></h2>
         <h3>Agrupación (clustering) geometrias de tipo punto</h3>
           <dl class="dl-vertical">
-            <dt>Recentrar el mapa base y ajuste zoom<dt>
-            <dd>Ajuste de los parámetros de entrada del método <code>map.setView()</code>. 
-            <dt>Acceso a un servicio ArcGIS</dt>
-            <dd>Con el método <code>L.esri.featureLayer()</code>, se accede a la capa vectorial de puntos (Feature layer) y se añade al mapa con <code>addMap()</code>.</dd>
+            <dt>Importar Leaflet plugin y Esri leaflet plugin</dt>
+            <dd>Como cualquier otros fichero JavaScript, mediante el elemento HTML script. En este caso <code>L.esri.Layers.ClusteredFeatureLayer</code> depende del plugin <code>Leaflet.markercluster</code>, por lo que hay que añadir ambos en el orden correcto.</dd>
+            <dt>Agrupar geometrías de tipo punto</dt>
+            <dd>Con el método <code>L.esri.clusteredFeatureLayer()</code>, se accede a una capa vectorial de puntos (Feature layer), se agrupa espacialmente, y se añade al mapa con <code>addTo(map)</code>. Como <code>L.esri.Layers.ClusteredFeatureLayer</code> hereda de <code>L.esri.Layers.FeatureLayer</code>, las propiedades y métodos de este último (<code>pointToLayer</code>, <code>style></code>, <code>onEachFeature</code>, etc.) también se aplican al primero.</dd>
           </dl>
          <h3>Más info</h3>
         <ul>
-          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html" target="_blank">L.esri.featureLayer()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#popup" target="_blank">layer.bindPopup()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#util-template" target="_blank">L.Util.template()</a></code></li>
+          <li><code><a href="https://github.com/Leaflet/Leaflet.markercluster" target="_blank">Leaflet.markercluster</a></code></li>
+          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/clustered-feature-layer.html" target="_blank">L.esri.Layers.ClusteredFeatureLayer</a></code></li>
+          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html" target="_blank">L.esri.Layers.FeatureLayer</a></code></li>
         </ul>
       </div> <!-- /data -->
       

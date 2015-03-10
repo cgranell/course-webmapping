@@ -88,19 +88,21 @@
   <div class="container">
     <div class="row">
       <div id="data" class="col-md-6 pull-left">
-        <h2>05 <span class="text-info">Operaciones espaciales</span></h2>
+        <h2>06 <span class="text-info">Operaciones espaciales</span></h2>
         <h3>Servicio de geocoding</h3>
           <dl class="dl-vertical">
-            <dt>Recentrar el mapa base y ajuste zoom<dt>
-            <dd>Ajuste de los parámetros de entrada del método <code>map.setView()</code>. 
-            <dt>Acceso a un servicio ArcGIS</dt>
-            <dd>Con el método <code>L.esri.featureLayer()</code>, se accede a la capa vectorial de puntos (Feature layer) y se añade al mapa con <code>addMap()</code>.</dd>
+            <dt>Importar Esri leaflet plugin</dt>
+            <dd>Como cualquier otros fichero JavaScript, mediante el elemento HTML script</dd>
+            <dt>Añadir un control de Geocoding</dt>
+            <dd>Con el método <code>L.esri.Geocoding.Controls.Geosearch()</code>, se crea una isntacia del control y se añade al mapa de forma habitual con <code>addTo(map)</code>
+            <dt>Escuchar por eventos</dt>
+            <dd>Un control o capa puede suscribirse a un tipo de evento con el método <code>.on(event, function())</code>. El primer parámetro <code>event</code> es un <em>string</em> que indica el tipo de evento. El segundo parámetro es en realidad una función que se ejecuta en respuesta a dicho evento.</dd>
           </dl>
          <h3>Más info</h3>
         <ul>
-          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/layers/feature-layer.html" target="_blank">L.esri.featureLayer()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#popup" target="_blank">layer.bindPopup()</a></code></li>
-          <li><code><a href="http://leafletjs.com/reference.html#util-template" target="_blank">L.Util.template()</a></code></li>
+          <li><code><a href="https://github.com/Esri/esri-leaflet-geocoder#lesrigeocodingcontrolsgeosearch" target="_blank">L.esri.Geocoding.Controls.Geosearch()</a></code></li>
+          <li><code><a href="http://esri.github.io/esri-leaflet/api-reference/events.html" target="_blank">events</a></code></li>
+          <li><code><a href="https://github.com/Esri/esri-leaflet-geocoder#events" target="_blank">event 'results'</a></code></li>
         </ul>
       </div> <!-- /data -->
       
