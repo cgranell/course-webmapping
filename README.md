@@ -56,7 +56,7 @@ Icons made by [Freepik](http://www.flaticon.com/authors/freepik) from [www.flati
 Servicios ArcGIS proporcionados por [UJI Smart Campus](http://smart.uji.es/) 
 
 ## Licencia
-...
+[Creative Commons Reconocimiento-CompartirIgual 3.0 España](http://creativecommons.org/licenses/by-sa/3.0/es/) (CC BY-SA 3.0 ES)]
 
 
 
