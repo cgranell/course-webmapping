@@ -166,7 +166,7 @@
     });
 
     // Load (JQuery) a JSON  file 
-    $.getJSON("/data/bus_line1.json", function (data) {
+    $.getJSON("../data/bus_line1.json", function (data) {
       busLineLayer.addData(data);
       map.addLayer(busLineLayer);
     });
