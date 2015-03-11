@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Especialización UOC: Programación de SIG</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized for reponsive website -->
+  <!-- To check meaning of content variables -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Stylesheets -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../assets/bootstrap-3.1.1/css/bootstrap.min.css" >
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!-- LeafLet CSS -->
+  <link rel="stylesheet" href="../assets/leaflet-0.7.3/leaflet.css" /> 
+
+  <!-- custom styles -->
+  <style>
+    html, body, #container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    body {
+      padding-top: 50px;
+    }
+    
+    /* map element */
+    #map-area {
+      padding-top: 20px;
+    }
+    #map {
+      height: 500px;
+      width: auto;
+      box-shadow: 0 8px 16px -8px #222;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #E5E5E5;
+      border-radius: 6px;*/
+    }
+
+    /* Helper Classes */
+    .textcenter { text-align: center; }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+      </div>  <!-- /.navbar-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- Leaflet menu item -->
+          <li><a target="_blank" href="http://leafletjs.com/" data-toggle="collapse" data-target=".navbar-collapse.in">
+           <i class="fa fa-leaf white"></i>&nbsp;Leaflet.js</a></li>
+        </ul>
+      </div>  <!--/.navbar-collapse -->
+    </div>  <!-- /.container -->
+  </div>  <!-- /.navbar-->
+
+  <div class="container">
+    <div class="row">
+      <div id="data" class="col-md-6 pull-left">
+        <h2>04 <span class="text-info">Capas vectoriales (csv)</span></h2>
+        <h3>Carga datos (puntos/markers) desde un fichero como una capa geojson</h3>
+          <dl class="dl-vertical">
+            <dt>Configurar una capa geojson</dt>
+            <dd>Se llama a <code>L.geoCsv()</code>. El primer parámetro esta vez es <code>null</code>, porque la capa de datos se carga <em>a posteriori</em> cuando se lee. El segundo parámetro es un objeto de configuración. </dd>
+            <dt>Cargar datos desde un fichero</dt>
+            <dd>Se leen los datos del fichero mediante <code>$.ajax()</code> de JQuery. En caso de éxito, se cargan los datos leídos en la capa <code>busStopsLayer</code> llamando a <code>layer.addData()</code>, y se añade al mapa con <code>map.addLayer()</code>.</dd>
+          </dl>
+         <h3>Más info</h3>
+        <ul>
+          <li><code><a href="https://github.com/joker-x/Leaflet.geoCSV" target="_blank">L.geoCsv()</a></code></li>
+          <li><code><a href="http://api.jquery.com/jQuery.ajax/" target="_blank">$.ajax()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#geojson-adddata" target="_blank">layer.addData()</a></code></li>
+          
+        </ul>
+      </div> <!-- /data -->
+      
+      <div id="map-area" class="col-md-6 pull-right">
+        <div id="map"></div>
+      </div>  <!-- /.map-area -->
+    </div> <!-- row -->
+
+    <hr>
+
+    <footer class="textcenter">
+      <p class="muted">
+        <a href="https://github.com/cgranell/course-webmapping">Fork me on Github</a>
+      </p>
+    </footer>
+
+  </div>  <!-- /container -->
+    
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../assets/jquery-1.11.1.min.js"></script>
+  <script src="../assets/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+
+  <script src="../assets/leaflet-0.7.3/leaflet.js"> </script>
+  <!-- Load Leaflet from CDN-->
+  <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
+
+  <!-- Load Leaflet plugin. See https://github.com/joker-x/Leaflet.geoCSV -->
+  <script src="../assets/leaflet.geocsv-src.js"> </script>
+
+  <!-- JS script code -->
+  <script type="text/javascript">
+    /*******************************
+      Map stuff
+    *******************************/
+  // initialize the map
+    var map = L.map('map', {
+      scrollWheelZoom: true,
+      minZoom: 5,
+      maxZoom: 18,
+      zoomControl:false 
+    });
+ 
+    // set the position and zoom level of the map
+    map.setView([39.88721, -0.08445], 10);
+
+    var osmAttribution = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
+    var osmBWLayer = L.tileLayer('http://{s}.www.toolserver.org/tiles/bw-mapnik/{z}/{x}/{y}.png', {
+      attribution: 'Map data Black and White &copy;'  + osmAttribution, 
+      maxZoom: 18
+    }).addTo(map);  // make it the active, default base layer on the map
+
+    
+    // First input parameter is null because data is loaded later from a file 
+    var busStopsLayer = L.geoCsv(null, {
+      titles: ['id','address','code','name','nextbuses','lon','lat'],
+      firstLineTitles: true, 
+      fieldSeparator: ',',
+      lineSeparator: '\n',
+      latitudeTitle: 'lat',
+      longitudeTitle: 'lon',
+      deleteDoubleQuotes: true
+    });
+    
+    // Load (JQuery) a CSV file 
+    $.ajax ({
+      type:'GET',
+      dataType:'text',
+      url:'/data/bus_stops1.csv',
+      error: function() {
+        alert('No se pudieron cargar los datos');
+      },
+      success: function(csv) {
+        busStopsLayer.addData(csv);
+        map.addLayer(busStopsLayer);
+      }
+    });
+
+    
+    // List of basemap layers
+    var baselayers = {
+      "OSM.Black&White": osmBWLayer
+    } 
+    
+    // List of overlayers
+    var overlayers = {
+      "Bus Stops 1": busStopsLayer
+    };
+
+    // Create layer control 
+    var layerControl = L.control.layers(baselayers, overlayers, {
+      position: 'topright'
+    });
+
+    // add layer control to the map
+    map.addControl(layerControl);
+  </script>
+</body>
+</html>

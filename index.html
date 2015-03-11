@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Especialización UOC: Programación de SIG</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized for reponsive website -->
+  <!-- To check meaning of content variables -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Stylesheets -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../assets/bootstrap-3.1.1/css/bootstrap.min.css" >
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+  <!-- custom styles -->
+  <style>
+    html, body, #container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    body {
+      padding-top: 50px;
+      padding-bottom: 20px;
+    }
+
+    /* Helper Classes */
+    .textcenter { text-align: center; }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand"  target="_blank" href="http://estudios.uoc.edu/es/masters-posgrados-especializaciones/especializacion/informatica-multimedia-telecomunicacion/programacion-desarrollo-sistemas-informacion-geografica/">Programación de aplicaciones web de mapas</a>
+      </div>  <!-- /.navbar-header -->
+      <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+          <!-- About menu item -->
+          <li><a href="#" id="about-btn" data-toggle="collapse" data-target=".navbar-collapse.in">
+              <i class="fa fa-question-circle white"></i>&nbsp;Acerca de</a></li>
+        </ul>
+      </div>  <!--/.navbar-collapse -->
+    </div>  <!-- /.container -->
+  </div>  <!-- /.navbar-->
+ 
+  <br/>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Leaflet.js</div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h4>Mapas base</h4>
+              <span class="label label-default">01</span>&nbsp;<a target="_blank" href="examples-leaflet/01.html">Carga y muestra un mapa base sobre un mapa</a><br/>
+              <span class="label label-default">02</span>&nbsp;<a target="_blank" href="examples-leaflet/02.html">Control de capas para la selección de mapas base</a>
+            </li>
+
+            <li class="list-group-item">
+              <h4>Capas vectoriales (csv)</h4> 
+              <span class="label label-default">03</span>&nbsp;<a target="_blank" href="examples-leaflet/03.html">Carga datos (puntos) desde una variable local</a><br/>
+              <span class="label label-default">04</span>&nbsp;<a target="_blank" href="examples-leaflet/04.html">Carga datos (puntos) desde un fichero</a><br/>
+              <span class="label label-default">05</span>&nbsp;<a target="_blank" href="examples-leaflet/05.html">Muestra (popups) un atributo de una geometría (punto)</a><br/>
+              <span class="label label-warning">01</span>&nbsp;<a target="_blank" href="exercises-leaflet/01-template.html">Muestra (popups) todos los atributos de una geometría (punto)</a><br/>     
+            </li>
+
+            <li class="list-group-item">
+              <h4>Capas vectoriales (geojson)</h4>
+              <span class="label label-default">06</span>&nbsp;<a target="_blank" href="examples-leaflet/06.html">Carga datos (puntos) desde una variable local</a><br/>
+              <span class="label label-default">07</span>&nbsp;<a target="_blank" href="examples-leaflet/07.html">Carga datos (puntos) desde un fichero local</a><br/>
+              <span class="label label-default">08</span>&nbsp;<a target="_blank" href="examples-leaflet/08.html">Cambiar simbología de una geometría (puntos)</a><br/>
+              <span class="label label-warning">02</span>&nbsp;<a target="_blank" href="exercises-leaflet/02-template.html">Cambia simbología de una geometría (puntos)</a><br/>
+              <span class="label label-default">09</span>&nbsp;<a target="_blank" href="examples-leaflet/09.html">Carga datos (líneas) desde un fichero local</a><br/>
+              <span class="label label-warning">03</span>&nbsp;<a target="_blank" href="exercises-leaflet/03-template.html">Carga datos (puntos y lineas) desde varios ficheros</a><br/>
+              <span class="label label-default">10</span>&nbsp;<a target="_blank" href="examples-leaflet/10.html">Cambiar simbología de una geometría (líneas)</a><br/>
+            </li>
+            
+          </ul>
+        </div> <!-- /.panel -->
+      </div>  <!-- /.col -->
+
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Esri Leaflet plugins</div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h4>Mapas base</h4>
+              <span class="label label-default">01</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/01.html">Carga y muestra un mapa base sobre un mapa</a><br/>
+              <span class="label label-default">02</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/02.html">Selección de mapas base</a>
+            </li>
+
+            <li class="list-group-item">
+              <h4>Capas vectoriales</h4>
+              <span class="label label-default">03</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/03.html">Carga datos desde un servicio web ArcGIS</a><br/>
+              <span class="label label-warning">01</span>&nbsp;<a target="_blank" href="exercises-esri-leaflet/01-template.html">Carga datos desde varios servicios web ArcGIS</a><br/>
+              <span class="label label-default">04</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/04.html">Muestra (popups) un atributo de una geometría (punto)</a><br/>
+              <span class="label label-warning">02</span>&nbsp;<a target="_blank" href="exercises-esri-leaflet/02-template.html">Muestra (popups) los atributos de una geometría (punto)</a><br/>
+              <span class="label label-default">05</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/05.html">Cambiar simbología de una geometría (punto)</a><br/>
+              <span class="label label-warning">03</span>&nbsp;<a target="_blank" href="exercises-esri-leaflet/03-template.html">Cambiar simbología de una geometría (punto)</a><br/>
+
+            </li>
+            <li class="list-group-item">
+              <h4>Operaciones espaciales</h4>
+              <span class="label label-default">06</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/06.html">Servicio de geocoding</a><br/>
+              <span class="label label-default">07</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/07.html">Agrupación (clustering) de geometrías de tipo punto</a><br/>
+              <span class="label label-warning">04</span>&nbsp;<a target="_blank" href="exercises-esri-leaflet/04-template.html">Añadir simbología a markers individuales en agrupamiento</a><br/>
+              <span class="label label-default">08</span>&nbsp;<a target="_blank" href="examples-esri-leaflet/08.html">Mapas de calor (heatmaps) a partir de geometrias de tipo de punto</a><br/>
+              <span class="label label-danger">05</span>&nbsp;<a target="_blank" href="exercises-esri-leaflet/05-template.html">Proyecto final</a><br/>
+              
+            </li>
+          </ul>
+        </div> <!-- /.panel -->
+      </div>  <!-- /.col -->
+
+    </div> <!-- /.row -->
+
+    <hr>
+
+    <footer class="textcenter">
+      <p>
+        <a href="https://github.com/cgranell/course-webmapping">Fork me on Github</a>
+      </p>
+    </footer>
+
+  </div>  <!-- /container -->
+    
+   <!-- Content not shown at load -->
+   <!-- About modal window -->
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">Welcome to the Site Project</h4>
+          </div>
+          <div class="modal-body">
+            <ul class="nav nav-tabs" id="aboutTabs">
+              <li class="active"><a href="#about" data-toggle="tab"><i class="fa fa-question-circle"></i>&nbsp;About the project</a></li>
+              <li><a href="#contact" data-toggle="tab"><i class="fa fa-envelope"></i>&nbsp;Contact us</a></li>
+              <li><a href="#disclaimer" data-toggle="tab"><i class="fa fa-exclamation-circle"></i>&nbsp;Disclaimer</a></li>
+              <li><a href="#data" data-toggle="tab"><i class="fa fa-globe"></i>&nbsp;Data</a></li>
+            </ul>
+            <div class="tab-content" id="aboutTabsContent" style="padding-top: 10px;">
+              <div class="tab-pane fade active in" id="about">
+                <p>A simple template for building web mapping applications with <a href="http://getbootstrap.com/" target="_blank">Bootstrap 3</a>, <a href="http://leafletjs.com/" target="_blank">Leaflet</a>, and <a href="https://github.com/turbo87/sidebar-v2/" target="_blank">sidebar-2 plugin .js</a>. Open source, XX licensed, and available on <a href="https://github.com/cgranell" target="_blank">GitHub</a>.</p>
+                <div class="panel panel-primary">
+                  <div class="panel-heading">Features</div>
+                  <ul class="list-group">
+                    <li class="list-group-item">Item 1...</li>
+                    <li class="list-group-item">Item 2...</li>
+                    <li class="list-group-item">Item 3...</li>
+                    <li class="list-group-item">Item 4....</li>
+                  </ul>
+                </div>
+              </div>
+              <div id="disclaimer" class="tab-pane fade text-danger">
+                <p>Disclaimer text goes here...</p>
+                <p>And more text here...</p>
+              </div>
+              <div class="tab-pane fade" id="contact">
+                <form id="contact-form">
+                  <div class="well well-sm">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label for="first-name">First Name:</label>
+                          <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="form-group">
+                          <label for="last-name">Last Name:</label>
+                          <input type="text" class="form-control" id="last-email">
+                        </div>
+                        <div class="form-group">
+                          <label for="email">Email:</label>
+                          <input type="text" class="form-control" id="email">
+                        </div>
+                      </div>
+                      <div class="col-md-8">
+                        <label for="message">Message:</label>
+                        <textarea class="form-control" rows="8" id="message"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <p>
+                          <button type="submit" class="btn btn-primary pull-right" data-dismiss="modal">Send</button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="data">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">List of datasets</div>
+                    <ul class="list-group">
+                      <li class="list-group-item">Data set 1 available at ...</li>
+                      <li class="list-group-item">Data set 2 courtesy of ...</li>
+                      <li class="list-group-item">Data set 3 available at...</li>
+                      <li class="list-group-item">Data set 4 is subject to ...</li>
+                    </ul>
+                  </div>
+              </div>
+            </div> <!-- /.tab-content -->
+          </div> <!-- /.model-body -->
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../assets/jquery-1.11.1.min.js"></script>
+  <script src="../assets/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+
+
+  <!-- JS script code -->
+  <script type="text/javascript">
+    /*******************************
+    Listeners stuff - JQuery
+    *******************************/
+
+    $("#about-btn").click(function() {
+      $("#aboutModal").modal("show");
+    return false;
+    });
+
+    // Map stuff
+    /*******************************
+    Map stuff
+    *******************************/
+
+  </script>
+</body>
+</html>

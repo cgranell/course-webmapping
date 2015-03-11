@@ -1,0 +1,729 @@
+{
+"type":"FeatureCollection",
+"features": [{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e3",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.041783,39.980564]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1632,
+		"address":"Pza. País Valenciá",
+		"code":"802",
+		"name":"Pza. País Valenciá",
+		"nextbuses":"L1 - 16:41;L1 - 16:59#L12 - 16:37;L12 - 17:37"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e4",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.034112,39.987907]},
+	"geometry_name":"location",
+	"properties":{
+		"id":1633,
+		"address":"Pza. Mª Agustina (Gobernador)",
+		"code":"803",
+		"name":"Pza. Mª Agustina (Gobernador)",
+		"nextbuses":"L1 - 16:36;L1 - 16:54#L11 - 16:43;L11 - 17:12#L9 - 16:38;L9 - 16:53"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e5",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.036077,39.981743]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1636,
+		"address":"Pza. Fadrell ",
+		"code":"806",
+		"name":"Pza. Fadrell ",
+		"nextbuses":"L1 - 16:39;L1 - 16:56#L4 - 16:51;L4 - 17:21#L8 - 17:49;L8 - 19:09"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e6",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.034401,39.985843]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1654,
+		"address":"Gobernador (Pza. Cardona Vives)",
+		"code":"824",
+		"name":"Gobernador (Pza. Cardona Vives)",
+		"nextbuses":"L1 - 16:37;L1 - 16:54#L8 - 17:48;L8 - 19:08#L9 - 16:39;L9 - 16:54"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e7",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.038507,39.979697]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1659,
+		"address":"Av. Casalduch (Colegio Carmelitas)",
+		"code":"829",
+		"name":"Av. Casalduch (Colegio Carmelitas)",
+		"nextbuses":"L1 - 16:40;L1 - 16:57#L8 - 17:50;L8 - 19:10"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e8",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.042045,40.002171]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1665,
+		"address":"Av. Benicàssim (Hosp.Gral.)",
+		"code":"835",
+		"name":"Av. Benicàssim (Hosp.Gral.)",
+		"nextbuses":"L1 - 16:41;L1 - 16:54#L10 - 16:47;L10 - 17:26#L8 - 16:59;L8 - 18:19"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39e9",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.042135,40.001975]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1672,
+		"address":"Hospital General",
+		"code":"842",
+		"name":"Hospital General",
+		"nextbuses":"L1 - 16:47;L1 - 17:00#L2 - 16:41;L2 - 17:10#L10 - 17:04;L10 - 17:44#L8 - 17:39;L8 - 18:59"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39ea",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.042101,40.001948]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1674,
+		"address":"Hospital General",
+		"code":"844",
+		"name":"Hospital General",
+		"nextbuses":"Empty"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39eb",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.045306,39.999615]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1676,
+		"address":"Av. Castell Vell",
+		"code":"846",
+		"name":"Av. Castell Vell",
+		"nextbuses":"L1 - 16:45;L1 - 16:58#L2 - 16:37;L2 - 17:07#L8 - 17:29;L8 - 18:49"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39ec",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.039236,39.998334]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1681,
+		"address":"Av. Benicassim (Políg. Estadio B)",
+		"code":"851",
+		"name":"Av. Benicassim (Políg. Estadio B)",
+		"nextbuses":"L1 - 16:49;L1 - 17:03#L2 - 16:45;L2 - 17:14#L8 - 17:41;L8 - 19:01"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39ed",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.053746,39.973852]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1690,
+		"address":"Músico Pascual Asensio nº4",
+		"code":"860",
+		"name":"Músico Pascual Asensio nº4",
+		"nextbuses":"L1 - 16:47;L1 - 17:04#L2 - 17:00;L2 - 17:29#L15 - 16:58;L15 - 17:18#L8 - 16:36;L8 - 17:56"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39ee",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.045985,40.000164]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1702,
+		"address":"Av. Diputación (Grupo S.Agustín)",
+		"code":"872",
+		"name":"Av. Diputación (Grupo S.Agustín)",
+		"nextbuses":"L1 - 16:45;L1 - 16:58#L8 - 17:28;L8 - 18:48"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39ef",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.046902,40.00171]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1704,
+		"address":"Av. Diputación (Ambulatorio)",
+		"code":"874",
+		"name":"Av. Diputación (Ambulatorio)",
+		"nextbuses":"L1 - 16:44;L1 - 16:57#L8 - 17:27;L8 - 18:47"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f0",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.056304,39.974809]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1709,
+		"address":"Polideportivo Ciudad de Castellón",
+		"code":"879",
+		"name":"Polideportivo Ciudad de Castellón",
+		"nextbuses":"L1 - 16:59;L1 - 17:14#L2 - 16:44;L2 - 17:14#L15 - 17:09;L15 - 17:39"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f2",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.043987,39.979152]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1712,
+		"address":"Av. Valencia nº28",
+		"code":"882",
+		"name":"Av. Valencia nº28",
+		"nextbuses":"L1 - 16:43;L1 - 17:02#L2 - 16:58;L2 - 17:26#L15 - 16:54;L15 - 17:14"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f3",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.050113,39.974742]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1713,
+		"address":"Av. Valencia nº110",
+		"code":"883",
+		"name":"Av. Valencia nº110",
+		"nextbuses":"L1 - 16:45;L1 - 17:04#L2 - 16:59;L2 - 17:28#L15 - 16:58;L15 - 17:17"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f4",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.047295,39.976823]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1714,
+		"address":"Av. Valencia (Pza. Libertad) B",
+		"code":"884",
+		"name":"Av. Valencia (Pza. Libertad) B",
+		"nextbuses":"L1 - 16:44;L1 - 17:03#L2 - 16:58;L2 - 17:28#L15 - 16:56;L15 - 17:16"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f5",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.047093,39.976637]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1715,
+		"address":"Av. Valencia (Pza. Libertad) A",
+		"code":"885",
+		"name":"Av. Valencia (Pza. Libertad) A",
+		"nextbuses":"L1 - 16:49;L1 - 17:04#L2 - 16:50;L2 - 17:20#L15 - 16:39;L15 - 17:14"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f6",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.049871,39.974654]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1716,
+		"address":"Av. Valencia (Grupo Verge Lledó)",
+		"code":"886",
+		"name":"Av. Valencia (Grupo Verge Lledó)",
+		"nextbuses":"L1 - 16:47;L1 - 17:02#L2 - 16:47;L2 - 17:17#L15 - 16:37;L15 - 17:12"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f7",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.047129,39.97662]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1729,
+		"address":"Av.Valencia (Pza. Libertad) A",
+		"code":"899",
+		"name":"Av.Valencia (Pza. Libertad) A",
+		"nextbuses":"Empty"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f8",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.049907,39.974628]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1731,
+		"address":"Av.Valencia (Grupo Verge Lledó)",
+		"code":"900",
+		"name":"Av.Valencia (Grupo Verge Lledó)",
+		"nextbuses":"Empty"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39f9",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.053104,39.973259]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1732,
+		"address":"Músico Pascual Asencio nº3",
+		"code":"901",
+		"name":"Músico Pascual Asencio nº3",
+		"nextbuses":"L1 - 16:46;L1 - 17:01#L2 - 16:46;L2 - 17:16#L15 - 16:36;L15 - 17:11"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39fa",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.056075,39.974947]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1733,
+		"address":"Músico Pascual Asencio nº42",
+		"code":"902",
+		"name":"Músico Pascual Asencio nº42",
+		"nextbuses":"L1 - 16:47;L1 - 17:04#L2 - 17:02;L2 - 17:30#L15 - 16:58;L15 - 17:19"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39fb",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.040675,39.979653]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1740,
+		"address":"Herrero 41",
+		"code":"909",
+		"name":"Herrero 41",
+		"nextbuses":"L1 - 16:39;L1 - 16:54#L4 - 16:45;L4 - 17:16#L7 - 17:00;L7 - 17:30"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39fc",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.043146,39.979095]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1741,
+		"address":"Av.Burriana 4",
+		"code":"910",
+		"name":"Av.Burriana 4",
+		"nextbuses":"L1 - 16:37;L1 - 16:52#L4 - 16:44;L4 - 17:14#L12 - 17:12;L12 - 18:12#L7 - 16:59;L7 - 17:29"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39fd",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.039093,39.981865]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1742,
+		"address":"Herrero 15",
+		"code":"911",
+		"name":"Herrero 15",
+		"nextbuses":"L1 - 16:41;L1 - 16:56#L4 - 16:47;L4 - 17:18#L7 - 17:02;L7 - 17:32"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39fe",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.037398,39.983136]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1743,
+		"address":"Asensi 6",
+		"code":"912",
+		"name":"Asensi 6",
+		"nextbuses":"L4 - 16:50;L4 - 17:20#L7 - 16:37;L7 - 17:05"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_39ff",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.04318,39.979123]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1752,
+		"address":"Av.Burriana nº 4",
+		"code":"921",
+		"name":"Av.Burriana nº 4",
+		"nextbuses":"Empty"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a00",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.029908,39.980882]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1753,
+		"address":"Grupo Grapa",
+		"code":"922",
+		"name":"Grupo Grapa",
+		"nextbuses":"L4 - 16:59;L4 - 17:29#L7 - 16:41;L7 - 17:09"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a01",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.035112,39.982132]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1758,
+		"address":"Maestro Ripollés (Pza. Fadrell)",
+		"code":"927",
+		"name":"Maestro Ripollés (Pza. Fadrell)",
+		"nextbuses":"L7 - 16:37;L7 - 17:06"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a02",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.037752,39.983632]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1770,
+		"address":"Pza. La Paz nº 6",
+		"code":"931",
+		"name":"Pza. La Paz nº 6",
+		"nextbuses":"Empty"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a03",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.037775,39.983642]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1813,
+		"address":"Pza. La Paz nº6",
+		"code":"974",
+		"name":"Pza. La Paz nº6",
+		"nextbuses":"L1 - 16:45;L1 - 17:00#L6 - 16:52;L6 - 17:22"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a04",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.04511,39.978082]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1856,
+		"address":"Av. Valencia nº27",
+		"code":"1053",
+		"name":"Av. Valencia nº27",
+		"nextbuses":"L1 - 16:36;L1 - 16:51#L2 - 16:51;L2 - 17:21"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a05",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.027769,39.984853]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1858,
+		"address":"Columbretes, nº2",
+		"code":"1026",
+		"name":"Columbretes, nº2",
+		"nextbuses":"L11 - 16:47;L11 - 17:15"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a06",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.03068,39.988207]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1862,
+		"address":"Rafalafena (Biblioteca)",
+		"code":"1030",
+		"name":"Rafalafena (Biblioteca)",
+		"nextbuses":"L11 - 16:59;L11 - 17:29"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a07",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.028866,39.987908]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1864,
+		"address":"Rafalafena (Ambulatorio)",
+		"code":"1032",
+		"name":"Rafalafena (Ambulatorio)",
+		"nextbuses":"L11 - 16:50;L11 - 17:18"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a08",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.039298,39.998786]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1871,
+		"address":"Av. Benicassim (Políg. Estadio A)",
+		"code":"1039",
+		"name":"Av. Benicassim (Políg. Estadio A)",
+		"nextbuses":"L1 - 16:40;L1 - 16:54#L2 - 17:04#L10 - 16:46;L10 - 17:25"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a09",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.037601,39.996599]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1878,
+		"address":"Av. Benicassim 4A",
+		"code":"1046",
+		"name":"Av. Benicassim 4A",
+		"nextbuses":"L1 - 16:39;L1 - 16:52#L2 - 17:04;L2 - 17:34#L10 - 16:45;L10 - 17:24"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a0a",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.033534,39.991793]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1885,
+		"address":"Av. Capuchinos nº36",
+		"code":"1055",
+		"name":"Av. Capuchinos nº36",
+		"nextbuses":"L1 - 16:37;L1 - 16:50"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a0b",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.0339,39.989559]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1886,
+		"address":"Av. Capuchinos 14",
+		"code":"1056",
+		"name":"Av. Capuchinos 14",
+		"nextbuses":"L1 - 16:49"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a0c",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.035585,39.989594]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1887,
+		"address":"Sanahuja nº49",
+		"code":"1057",
+		"name":"Sanahuja nº49",
+		"nextbuses":"L1 - 16:53"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a0d",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.036594,39.992529]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1888,
+		"address":"S.Roque nº95",
+		"code":"1058",
+		"name":"S.Roque nº95",
+		"nextbuses":"L1 - 16:52;L1 - 17:05"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a0e",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.03719,39.994724]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1889,
+		"address":"S.Roque (Pza. Teodoro Izquierdo)",
+		"code":"1059",
+		"name":"S.Roque (Pza. Teodoro Izquierdo)",
+		"nextbuses":"L1 - 16:50;L1 - 17:04"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a0f",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.037017,39.994945]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1890,
+		"address":"Estadio Castalia",
+		"code":"1060",
+		"name":"Estadio Castalia",
+		"nextbuses":"L1 - 16:39;L1 - 16:52"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a10",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.035298,39.987037]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1891,
+		"address":"Mayor nº82 (Iglesia S.Agustín)",
+		"code":"1061",
+		"name":"Mayor nº82 (Iglesia S.Agustín)",
+		"nextbuses":"L1 - 16:48;L1 - 17:03"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a11",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.036849,39.985014]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1892,
+		"address":"Mayor (Sta.Clara)",
+		"code":"1062",
+		"name":"Mayor (Sta.Clara)",
+		"nextbuses":"L1 - 16:46;L1 - 17:01"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a12",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.036811,39.985076]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1893,
+		"address":"Mayor (Sta. Clara)",
+		"code":"1063",
+		"name":"Mayor (Sta. Clara)",
+		"nextbuses":"Empty"
+		}
+	},{
+	"type":"Feature",
+	"id":"bus_stop1.fid-730f3da1_14a2e98e256_3a13",
+	"geometry":{
+		"type":"Point",
+		"coordinates":[-0.033659,39.994318]
+		},
+	"geometry_name":"location",
+	"properties":{
+		"id":1894,
+		"address":"Cno. de La Plana (Colegio Isabel Ferrer)",
+		"code":"1064",
+		"name":"Cno. de La Plana (Colegio Isabel Ferrer)",
+		"nextbuses":"L1 - 16:38;L1 - 16:51"
+		}
+	}],
+"crs":{
+	"type":"EPSG",
+	"properties":{
+		"code":"4326"
+		}
+	}
+}

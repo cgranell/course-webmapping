@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Especialización UOC: Programación de SIG</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized for reponsive website -->
+  <!-- To check meaning of content variables -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Stylesheets -->
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="../assets/bootstrap-3.1.1/css/bootstrap.min.css" >
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+  <!-- LeafLet CSS -->
+  <link rel="stylesheet" href="../assets/leaflet-0.7.3/leaflet.css" /> 
+
+  <!-- custom styles -->
+  <style>
+    html, body, #container {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+    /* Move down content because we have a fixed navbar that is 50px tall */
+    body {
+      padding-top: 50px;
+    }
+    
+    /* map element */
+    #map-area {
+      padding-top: 20px;
+    }
+    #map {
+      height: 500px;
+      width: auto;
+      box-shadow: 0 8px 16px -8px #222;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      border: 1px solid #E5E5E5;
+      border-radius: 6px;*/
+    }
+
+    /* Helper Classes */
+    .textcenter { text-align: center; }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+      </div>  <!-- /.navbar-header -->
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <!-- Leaflet menu item -->
+          <li><a target="_blank" href="http://leafletjs.com/" data-toggle="collapse" data-target=".navbar-collapse.in">
+           <i class="fa fa-leaf white"></i>&nbsp;Leaflet.js</a></li>
+        </ul>
+      </div>  <!--/.navbar-collapse -->
+    </div>  <!-- /.container -->
+  </div>  <!-- /.navbar-->
+
+  <div class="container">
+    <div class="row">
+      <div id="data" class="col-md-6 pull-left">
+        <h2>01 <span class="text-info">Mapas base</span></h2>
+        <h3>Carga y muestra una capa base en un mapa</h3>
+          <dl class="dl-vertical">
+            <dt>Inicializar el mapa</dt>
+              <dd>Declara los parámetros de configuración del mapa con el método <code>L.Map()</code>. El primer parámetro es el id del elemento div para el mapa (p.e. <em>map</em>). El segundo parámetro es opcional y se trata de un <a href="http://leafletjs.com/reference.html#map-options" target="_blank">objecto</a> con las propiedades y valor de las opciones del mapa.</dd>
+            <dt>Centrar el mapa</dt>
+              <dd>Con el método <code>map.setView()</code> y como como parámetro de entrada un objeto <a href="http://leafletjs.com/reference.html#latlng" target="_blank">LatLon</a>. A veces es difícil encontrar el punto central de una mapa. Un servicio de ayuda es <a href="http://geojson.io" target="_blank">geojson.io</a>, a un editor natvo en wen que codifica geometrías (point, lines, polygons) en formato geojson. <span class="text-warning">Atención: En geojson, longitud va primero y luego latitud mientras que Leaflet sigue el orden inverso, latitude y  longitud, para especificar una coordenada</span>.</dd>
+            <dt>Añadir un mapa base</dt>
+              <dd>La fuente de un mapa base se declara con <code>L.tileLayer()</code>. El primer parámetro es una plantilla URL. El segundo parámetro es un objeto <a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">TileLayer options</a> que contiene uan serie de propiedades y opciones para la visualización de la capa base como por ejemplo <em>attribution</em> y <em>maxZoom</em>.</dd>.
+          </dl>
+        <h3>Más info</h3>
+        <ul>
+          <li><code><a href="http://leafletjs.com/reference.html#map-constructor" target="_blank">L.Map()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#map-set-methods" target="_blank">map.setView()</a></code></li>
+          <li><code><a href="http://leafletjs.com/reference.html#tilelayer" target="_blank">L.tileLayer()</a></code></li>
+        </ul>
+      </div> <!-- /data -->
+      
+      <div id="map-area" class="col-md-6 pull-right">
+        <div id="map"></div>
+      </div>  <!-- /.map-area -->
+    </div> <!-- row -->
+
+    <hr>
+
+    <footer class="textcenter">
+      <p class="muted">
+        <a href="https://github.com/cgranell/course-webmapping">Fork me on Github</a>
+      </p>
+    </footer>
+
+  </div>  <!-- /container -->
+    
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../assets/jquery-1.11.1.min.js"></script>
+  <script src="../assets/bootstrap-3.1.1/js/bootstrap.min.js"></script>
+
+  <script src="../assets/leaflet-0.7.3/leaflet.js"> </script>
+  <!-- Load Leaflet from CDN-->
+  <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
+
+  <!-- JS script code -->
+  <script type="text/javascript">
+    /*******************************
+      Map stuff
+    *******************************/
+  // initialize the map
+    var map = L.map('map', {
+      scrollWheelZoom: true,
+      minZoom: 5,
+      maxZoom: 18,
+      zoomControl:false 
+    });
+ 
+    // set the position and zoom level of the map
+    map.setView([39.88721, -0.08445], 6);
+
+    // Nothing happens so far. Map is empty
+ 
+    var mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>'; 
+    L.tileLayer( 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { 
+      attribution: 'Map data &copy; ' + mapLink, 
+      maxZoom: 18
+    }).addTo(map);
+
+  </script>
+</body>
+</html>

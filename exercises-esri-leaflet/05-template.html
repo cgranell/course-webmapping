@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title>Especialización UOC: Programación de SIG</title>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile viewport optimized for reponsive website -->
+  <!-- To check meaning of content variables -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- To check meaning of content variables -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <!-- Stylesheets -->
+  <!-- LeafLet CSS -->
+  <link rel="stylesheet" href="../assets/leaflet-0.7.3/leaflet.css" /> 
+
+  <!-- custom styles -->
+  <style>
+    html, body, #map {
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    #info-pane {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      z-index: 10;
+      padding: 1em;
+      background: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <div id="info-pane" class="leaflet-bar">Click sobre el mapa para más detalles</div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="../assets/jquery-1.11.1.min.js"></script>
+
+  <script src="../assets/leaflet-0.7.3/leaflet.js"> </script>
+  <!-- Load Leaflet from CDN-->
+  <!--<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>-->
+
+  <!-- Load Esri Leaflet from CDN -->
+  <script src="http://cdn-geoweb.s3.amazonaws.com/esri-leaflet/1.0.0-rc.5/esri-leaflet.js"></script>
+
+
+  <!-- JS script code -->
+  <script type="text/javascript">
+    /*******************************
+      Map stuff
+    *******************************/
+  // initialize the map
+    var map = L.map('map', {
+      scrollWheelZoom: true,
+      minZoom: 5,
+      maxZoom: 18,
+      zoomControl:false 
+    });
+ 
+    // set the position and zoom level of the map. Now it is centred in Universitat Jaume I, Castellón
+    map.setView([39.994, -0.06907], 15);
+
+    // Initialize default base map and add it to the map
+    var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
+
+
+
+    map.on('click', function(e){
+      var marker = new L.marker(e.latlng).addTo(map);
+      var content  = "<b>Proyecto final</b>: <br/>" +
+        "Combina varias funcionalidades en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características: " +
+        "<ul>" +
+        "<li>Control de capas." + "</li>" +
+        "<li>Acceso a varias capas de datos (las que quieras)." + "</li>" +
+        "<li>Simbología personaliza de los datos (puntos, líneas)." + "</li>" +
+        "<li>Uso de popups para mostrar información asociada a la geometría (puntos, líneas)." + "</li>" +
+        "<li>Uso de al menos una operación espacial (clustering, heatmap)." + "</li>" +
+        "</ul>";
+      marker.bindPopup(content).openPopup();
+    });
+    
+
+  </script>
+</body>
+</html>
