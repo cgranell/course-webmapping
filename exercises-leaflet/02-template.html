@@ -84,7 +84,7 @@
     });
 
     // Load (JQuery) a JSON  file 
-    $.getJSON("/data/bus_stops1.json", function (data) {
+    $.getJSON("../data/bus_stops1.json", function (data) {
       busStopsLayer.addData(data);
       map.addLayer(busStopsLayer);
     });
