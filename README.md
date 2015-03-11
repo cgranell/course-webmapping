@@ -6,7 +6,7 @@ Esta asignatura de cuatro semanas forma parte de la especialziación de [Program
 
 *Inicio especialización*: 18 marzo 2015
 
-Este repositorio complementa las actividades docentes de la asignatura. Aquí puedes encontrar ejemplos sencillos de programación de aplicaciones web de mapas con JavaScript.  
+Este repositorio complementa las actividades docentes de la asignatura. Aquí puedes encontrar [ejemplos y ejercicios](http://cgranell.github.io/course-webmapping/) sencillos de programación de aplicaciones web de mapas con JavaScript .  
 
 *Créditos totales de la asignatura*: 4 ECTS
 
