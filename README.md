@@ -50,6 +50,13 @@ Implementación por parte de los estudiantes de una aplicación web de mapas com
 * Uso de popups para mostrar información asociada a la geometría (puntos, líneas).
 * Uso de al menos una operación espacial (clustering, heatmap).
 
+## Referencias
+* Página principal de [Leaflet.js](http://leafletjs.com/)
+* [Leaflet API](http://leafletjs.com/reference.html)
+* Pagina principal de [ESRI Leaflet](https://github.com/Esri/esri-leaflet)
+* [Ejemplos de ESRI Leaflet](http://patrickarlt.github.io/esri-leaflet/examples/)
+* [ESRI Leaflet API](http://patrickarlt.github.io/esri-leaflet/api-reference/)
+
 ## Créditos
 Icons made by [Freepik](http://www.flaticon.com/authors/freepik) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/")
 
