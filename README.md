@@ -50,6 +50,18 @@ Implementación por parte de los estudiantes de una aplicación web de mapas com
 * Uso de popups para mostrar información asociada a la geometría (puntos, líneas).
 * Uso de al menos una operación espacial (clustering, heatmap).
 
+## Tareas a entregar
+### PEC
+Por especificar
+
+### Práctica 
+Por especificar 
+
+## Evaluación
+* Intervenciones en el aula: 10% de la nota final.
+* PEC (7 ejercicios propuestos): 40% de la nota final.
+* Práctica (proyecto final): 50% de la nota final.
+
 ## Referencias
 * Página principal de [Leaflet.js](http://leafletjs.com/)
 * [Leaflet API](http://leafletjs.com/reference.html)
