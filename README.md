@@ -52,7 +52,7 @@ Implementación por parte de los estudiantes de una aplicación web de mapas com
 
 ## Tareas a entregar
 ### PEC
-La Prueba de Evaluación Continua (PEC) consiste en la realización de 7  ejercicios cortos de programación [marcados claramente en amarillo](http://cgranell.github.io/course-webmapping/).
+La Prueba de Evaluación Continua (PEC) consiste en la realización de 7  ejercicios cortos de programación [marcados claramente en naranja](http://cgranell.github.io/course-webmapping/).
 
 Más detalles se detallarán próximamente.
 
