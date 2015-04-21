@@ -32,46 +32,56 @@ Videos:
 
 ### Semana 2: Leaflet.js 
 Videos:
-* 2.1-intro (<3 min): presentación contenido semana
+* 2.1-intro (<3 min): presentación contenido semana 2 y 3
 * 2.2-github (<3 min): navegación por los ejemplos del repositorio. 
 * 2.3-leaflet (<5min): descripción ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa".
 * 2.4-leaflet (<5min): descripción ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero".
+
 Ejercicios: 
 * [leaflet-01](http://cgranell.github.io/course-webmapping/exercises-leaflet/01-template.html)
 
 ### Semana 3: Leaflet.js 
 Videos:
 * 3.1-leaflet (<5min): descripción ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local".
+
 Ejercicios:
 * [leaflet-02](http://cgranell.github.io/course-webmapping/exercises-leaflet/02-template.html)
 * [leaflet-03](http://cgranell.github.io/course-webmapping/exercises-leaflet/03-template.html)  
 
 
 ### 4: ESRI Leaflet plugin
-* 3.1-intro (<3 min): presentación contenido semana 
-* 3.2-github (<3 min): navegación por los ejemplos del repositorio. 
-* 3.3.esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
-* 3.4.esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
-* 3.5.esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
+Videos:
+* 4.1-intro (<3 min): presentación contenido semana 
+* 4.2-github (<3 min): navegación por los ejemplos del repositorio. 
+* 4.3.esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
+* 4.4.esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
+* 4.5.esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
+
+Ejercicios:
+* [esri-leaflet-01](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/01-template.html)
+* [esri-leaflet-02](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/02-template.html)
+* [esri-leaflet-03](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/03-template.html)
+* [esri-leaflet-04](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/04-template.html)
 
 ### Semana 5: Tu problema, tu solución (<100 líneas) 
-Implementación por parte de los estudiantes de una aplicación web de mapas como proyecto final de la asignatura. Los estudiantes podrán definir la temática del proyecto y deberán combinar varias funcionalidades vistas en las semanas previas en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características:
+Videos:
+* 5.1-intro (<3 min): presentacion práctica 
+
+## Tareas a entregar
+### PEC
+La Prueba de Evaluación Continua (PEC) consiste en la realización de 7  ejercicios cortos de programación [marcados claramente en naranja](http://cgranell.github.io/course-webmapping/).
+
+Fecha de entrega: Se recomienda enviar los ejercicios tal como se van completamente. La fecha máxima de entrega será el **ultimo día de la cuarta semana (27 Mayo 2015)**
+
+### Práctica 
+La Práctica o proyecto final, [marcado claramente en rojo](http://cgranell.github.io/course-webmapping/), consiste en la programación por parte de los estudiantes de una aplicación web de mapas como proyecto final de la asignatura. Los estudiantes podrán definir la temática del proyecto y deberán combinar varias funcionalidades vistas en las semanas previas en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características:
 * Control de capas.
 * Acceso a varias capas de datos (las que quieras).
 * Simbología personalizada de los datos (puntos, líneas).
 * Uso de popups para mostrar información asociada a la geometría (puntos, líneas).
 * Uso de al menos una operación espacial (clustering, heatmap).
 
-## Tareas a entregar
-### PEC
-La Prueba de Evaluación Continua (PEC) consiste en la realización de 7  ejercicios cortos de programación [marcados claramente en naranja](http://cgranell.github.io/course-webmapping/).
-
-Más detalles se detallarán próximamente.
-
-### Práctica 
-La Práctica o proyecto final, [marcado claramente en rojo](http://cgranell.github.io/course-webmapping/), consiste en la programación de una aplicación web de mapas de menos de 100 líneas de código que combine aspectos vistos durante la asignatura
-
-Más detalles se detallarán próximamente.
+Fecha de entrega: **Último día del curso (3 de junio 2015)**
 
 ## Evaluación
 * Intervenciones en el aula: 10% de la nota final.
