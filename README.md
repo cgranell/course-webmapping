@@ -23,7 +23,7 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 
 ### Semana 1: Kit de desarrollo
 Videos:
-* [1.1-intro](http://cgranell.github.io/course-webmapping/video/uoc-1.1-intro/uoc-1.1-intro.html) (5:45): presentación curso y materiales docentes.
+* [1.1-intro](https://www.dropbox.com/s/nqmognaba6omzj0/uoc-1.1-intro.mp4?dl=0) (5:45): presentación curso y materiales docentes.
 * 1.2-viz (<5 min): una mapa es una visualización para informar, explicar 
 * 1.3-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
 * 1.4-js (<5min): Lo básico (video y material externo) 
