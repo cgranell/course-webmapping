@@ -24,10 +24,14 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 ### Semana 1: Kit de desarrollo
 Videos:
 * [1.1-intro](https://www.dropbox.com/s/nqmognaba6omzj0/uoc-1.1-intro.mp4?dl=0) (5:45): presentación curso y materiales docentes.
-* 1.2-viz (<5 min): una mapa es una visualización para informar, explicar 
-* 1.3-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
-* 1.4-js (<5min): Lo básico (video y material externo) 
+* 1.2-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
+* Videos de JavaScript basico del canal YouTube [ProgramaloTu - ProgramItYourself](https://www.youtube.com/playlist?list=PLA505F7842858BD06):
+    * Conceptos básicos: [configuración navegador y la etiqueta script](https://www.youtube.com/watch?v=i5gZvW99WHU), [declaraciones y comentarios](https://www.youtube.com/watch?v=xkIezoi2JEM), [declaración de variables](https://www.youtube.com/watch?v=Exjy8Mnlao4) y [tipos de variables](https://www.youtube.com/watch?v=Gyjd7CI52Og&list=PLA505F7842858BD06&index=4).
+    * Funciones:  
+    * []
+    * []()1.4-js (<5min): Lo básico (video y material externo) 
 * 1.5-js (5-10 min): objects, arrays, function...Lo básico (video y material externo)
+* 1.3-viz (<5 min): una mapa es una visualización para informar, explicar 
 
 ### Semana 2: Leaflet.js 
 Videos:
@@ -92,8 +96,11 @@ Fecha de entrega: **Último día del curso (3 de junio 2015)**
 * Pagina principal de [ESRI Leaflet](https://github.com/Esri/esri-leaflet)
 * [Ejemplos de ESRI Leaflet](http://patrickarlt.github.io/esri-leaflet/examples/)
 * [ESRI Leaflet API](http://patrickarlt.github.io/esri-leaflet/api-reference/)
+* [Eloquent JavaScript, Secodng Edition](http://eloquentjavascript.net/) e sun libro abierto sobre JavaScript y la programación de JS.
 
 ## Créditos
+Videos de JavaScript basico del canal YouTube [ProgramaloTu - ProgramItYourself](https://www.youtube.com/playlist?list=PLA505F7842858BD06)
+
 Icons made by [Freepik](http://www.flaticon.com/authors/freepik) from [www.flaticon.com](http://www.flaticon.com) is licensed by [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/")
 
 Servicios ArcGIS proporcionados por [UJI Smart Campus](http://smart.uji.es/) 
