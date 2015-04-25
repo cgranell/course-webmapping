@@ -23,19 +23,17 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 
 ### Semana 1: Kit de desarrollo
 Videos:
-* 1.1-intro (<5 min): presentacion curso y materiales docentes
-* 1.2-viz (<5 min): una mapa es una visualización. Pasos para diseñarla
+* 1.1-intro (<5 min): presentación curso y materiales docentes
+* 1.2-viz (<5 min): una mapa es una visualización para informar, explicar 
 * 1.3-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
-* 1.4-js (<5min): Lo básico
-* 1.5-js (5-10 min): objects, arrays, function...
-* 1.6-js (<3 min): añadir código javascript a páginas html
+* 1.4-js (<5min): Lo básico (video y material externo) 
+* 1.5-js (5-10 min): objects, arrays, function...Lo básico (video y material externo)
 
 ### Semana 2: Leaflet.js 
 Videos:
-* 2.1-intro (<3 min): presentación contenido semana 2 y 3
-* 2.2-github (<3 min): navegación por los ejemplos del repositorio. 
-* 2.3-leaflet (<5min): descripción ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa".
-* 2.4-leaflet (<5min): descripción ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero".
+* 2.1-intro (<5 min): presentación contenido semana 2 y 3 y navegación por los ejemplos del repositorio. 
+* 2.2-leaflet (<5min): descripción ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa".
+* 2.3-leaflet (<5min): descripción ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero".
 
 Ejercicios: 
 * [leaflet-01](http://cgranell.github.io/course-webmapping/exercises-leaflet/01-template.html)
