@@ -31,7 +31,7 @@ Videos:
 
 ### Semana 2: Leaflet.js 
 Videos:
-* 2.1-intro (<5 min): presentación contenido semana 2 y 3 y navegación por los ejemplos del repositorio. 
+* [2.1-intro](https://www.dropbox.com/s/pgp0c4uuas15upr/uoc-2.1-intro.mp4?dl=0) (6:52): presentación y navegación por la web de ejemplos y ejercicios para las semanas 2 y 3. 
 * 2.2-leaflet (<5min): descripción ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa".
 * 2.3-leaflet (<5min): descripción ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero".
 
