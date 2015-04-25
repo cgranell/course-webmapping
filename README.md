@@ -26,12 +26,13 @@ Videos:
 * [1.1-intro](https://www.dropbox.com/s/nqmognaba6omzj0/uoc-1.1-intro.mp4?dl=0) (5:45): presentación curso y materiales docentes.
 * 1.2-dev-tools (<5 min): Sublime Text 3, Chrome, Chrome Dev Tools. 
 * Videos de JavaScript basico del canal YouTube [ProgramaloTu - ProgramItYourself](https://www.youtube.com/playlist?list=PLA505F7842858BD06):
-    * Conceptos básicos: [configuración navegador y la etiqueta script](https://www.youtube.com/watch?v=i5gZvW99WHU), [declaraciones y comentarios](https://www.youtube.com/watch?v=xkIezoi2JEM), [declaración de variables](https://www.youtube.com/watch?v=Exjy8Mnlao4) y [tipos de variables](https://www.youtube.com/watch?v=Gyjd7CI52Og&list=PLA505F7842858BD06&index=4).
-    * Funciones:  
-    * []
-    * []()1.4-js (<5min): Lo básico (video y material externo) 
-* 1.5-js (5-10 min): objects, arrays, function...Lo básico (video y material externo)
-* 1.3-viz (<5 min): una mapa es una visualización para informar, explicar 
+    * Conceptos básicos: [configuración navegador y la etiqueta script](https://www.youtube.com/watch?v=i5gZvW99WHU), [declaraciones y comentarios](https://www.youtube.com/watch?v=xkIezoi2JEM), [declaración de variables](https://www.youtube.com/watch?v=Exjy8Mnlao4) y [tipos de variables](https://www.youtube.com/watch?v=Gyjd7CI52Og&list=PLA505F7842858BD06&index=4), y  [operadores matemáticos y concatenación de cadenas (+)](https://www.youtube.com/watch?v=dP1KVNJxauA&list=PLA505F7842858BD06&index=5).
+    * Funciones: [function](https://www.youtube.com/watch?v=4catKCNXFe0&index=6&list=PLA505F7842858BD06), [parámetros](https://www.youtube.com/watch?v=z3T0KOckcPM&list=PLA505F7842858BD06&index=7), [llamada a funciones](https://www.youtube.com/watch?v=fMTkPyAPil8&list=PLA505F7842858BD06&index=8), [variables locales y globales](https://www.youtube.com/watch?v=xQNPddQi_q0&list=PLA505F7842858BD06&index=9).
+    * Condicionales: [if](https://www.youtube.com/watch?v=H7duRLcaBT4&list=PLA505F7842858BD06&index=10), y [if-else](https://www.youtube.com/watch?v=o1drbk7KWak&list=PLA505F7842858BD06&index=11). 
+    * Bucles: [for](https://www.youtube.com/watch?v=gNNAuh9SUbw&index=16&list=PLA505F7842858BD06).
+    * Eventos: [concepto de eventos](https://www.youtube.com/watch?v=Cj9Mhab0R0g&index=19&list=PLA505F7842858BD06), y [funciones que escuchan eventos](https://www.youtube.com/watch?v=MWxwZirp77g&index=20&list=PLA505F7842858BD06).
+    * Arrays: [estructura de datos](https://www.youtube.com/watch?v=OqyeScn8nBk&index=27&list=PLA505F7842858BD06), [iterar un array](https://www.youtube.com/watch?v=raIMZdjx-aY&index=29&list=PLA505F7842858BD06), [métodos y propiedades de los arrays](https://www.youtube.com/watch?v=ukVj5wJz724&index=30&list=PLA505F7842858BD06). 
+ * 1.3-viz (<5 min): una mapa es una visualización para informar, explicar 
 
 ### Semana 2: Leaflet.js 
 Videos:
