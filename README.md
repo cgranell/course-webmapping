@@ -47,7 +47,7 @@ Ejercicios:
 * [leaflet-03](http://cgranell.github.io/course-webmapping/exercises-leaflet/03-template.html)  
 
 
-### 4: ESRI Leaflet plugin
+### Semana 4: ESRI Leaflet plugin
 Videos:
 * 4.1-intro (<3 min): presentación contenido semana 
 * 4.2-github (<3 min): navegación por los ejemplos del repositorio. 
