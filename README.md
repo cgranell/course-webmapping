@@ -24,7 +24,7 @@ No todo es diseño, porque los usuarios *adoran* las aplicaciones reales, y no s
 ### Semana 1: Kit de desarrollo
 Videos:
 * [1.1-intro](https://www.dropbox.com/s/nqmognaba6omzj0/uoc-1.1-intro.mp4?dl=0) (5:45): presentación curso y materiales docentes.
-* [1.2-dev-tools](https://www.dropbox.com/s/dc7yo0ufjbmqj4y/uoc-1.2-dev-tools.mp4?dl=0) (6:22): Presentation videos JS y herramientas de desarrollo (Sublime Text 3, Chrome Dev Tools). 
+* [1.2-dev-tools](https://www.dropbox.com/s/dc7yo0ufjbmqj4y/uoc-1.2-dev-tools.mp4?dl=0) (6:22): presentación videos JS y herramientas de desarrollo (Sublime Text 3, Chrome Dev Tools). 
 * Videos de JavaScript basico del canal YouTube [ProgramaloTu - ProgramItYourself](https://www.youtube.com/playlist?list=PLA505F7842858BD06):
     * Conceptos básicos: [configuración navegador y la etiqueta script](https://www.youtube.com/watch?v=i5gZvW99WHU), [declaraciones y comentarios](https://www.youtube.com/watch?v=xkIezoi2JEM), [declaración de variables](https://www.youtube.com/watch?v=Exjy8Mnlao4) y [tipos de variables](https://www.youtube.com/watch?v=Gyjd7CI52Og&list=PLA505F7842858BD06&index=4), y  [operadores matemáticos y concatenación de cadenas (+)](https://www.youtube.com/watch?v=dP1KVNJxauA&list=PLA505F7842858BD06&index=5).
     * Funciones: [function](https://www.youtube.com/watch?v=4catKCNXFe0&index=6&list=PLA505F7842858BD06), [parámetros](https://www.youtube.com/watch?v=z3T0KOckcPM&list=PLA505F7842858BD06&index=7), [llamada a funciones](https://www.youtube.com/watch?v=fMTkPyAPil8&list=PLA505F7842858BD06&index=8), [variables locales y globales](https://www.youtube.com/watch?v=xQNPddQi_q0&list=PLA505F7842858BD06&index=9).
