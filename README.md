@@ -32,7 +32,8 @@ Videos:
     * Bucles: [for](https://www.youtube.com/watch?v=gNNAuh9SUbw&index=16&list=PLA505F7842858BD06).
     * Eventos: [concepto de eventos](https://www.youtube.com/watch?v=Cj9Mhab0R0g&index=19&list=PLA505F7842858BD06), y [funciones que escuchan eventos](https://www.youtube.com/watch?v=MWxwZirp77g&index=20&list=PLA505F7842858BD06).
     * Arrays: [estructura de datos](https://www.youtube.com/watch?v=OqyeScn8nBk&index=27&list=PLA505F7842858BD06), [iterar un array](https://www.youtube.com/watch?v=raIMZdjx-aY&index=29&list=PLA505F7842858BD06), [métodos y propiedades de los arrays](https://www.youtube.com/watch?v=ukVj5wJz724&index=30&list=PLA505F7842858BD06). 
- * 1.3-viz (<5 min): una mapa es una visualización para informar, explicar 
+ 
+ * 1.3-viz (<5 min): una mapa es una visualización para informar, explicar. Webs de ejemplo 
 
 ### Semana 2: Leaflet.js 
 Videos:
