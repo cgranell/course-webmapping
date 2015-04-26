@@ -1,4 +1,4 @@
-# B2.180 - Programación de aplicaciones web de mapas (Programación II)
+# B2.180 - Programación SIG en entornos web  (Programación II)
 
 Esta asignatura de cinco semanas forma parte de la especialziación de [Programación de sistemas de información geográfica](http://estudios.uoc.edu/es/masters-posgrados-especializaciones/especializacion/informatica-multimedia-telecomunicacion/programacion-desarrollo-sistemas-informacion-geografica/), de la [UOC]. 
 
@@ -8,7 +8,7 @@ Esta asignatura de cinco semanas forma parte de la especialziación de [Programa
 
 Este repositorio complementa las actividades docentes de la asignatura. Aquí puedes encontrar [ejemplos y ejercicios](http://cgranell.github.io/course-webmapping/) sencillos de programación de aplicaciones web de mapas con JavaScript .  
 
-*Créditos totales de la asignatura*: 5 ECTS (5 semanas)
+*Créditos totales de la asignatura*: 4 ECTS (5 semanas)
 
 *Inicio asignatura*: 30 Abril 2015 
 
