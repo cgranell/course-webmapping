@@ -37,7 +37,7 @@ Videos:
 Videos:
 * [2.1-intro](https://www.dropbox.com/s/pgp0c4uuas15upr/uoc-2.1-intro.mp4?dl=0) (6:52): presentación y navegación por la web de ejemplos y ejercicios para las semanas 2 y 3. 
 * [2.2-leaflet](https://www.dropbox.com/s/1715wbg9xxz7wj8/uoc-2.2-leaflet.mp4?dl=0) (9:02): descripción [ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa"](http://cgranell.github.io/course-webmapping/examples-leaflet/01.html).
-* [2.3-leaflet]() (08:04): descripción [ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero"](http://cgranell.github.io/course-webmapping/examples-leaflet/04.html).
+* [2.3-leaflet](https://www.dropbox.com/s/8pr0aep3qvcopf1/uoc-2.3-leaflet.mp4?dl=0) (08:04): descripción [ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero"](http://cgranell.github.io/course-webmapping/examples-leaflet/04.html).
 
 Ejercicios: 
 * [leaflet-01](http://cgranell.github.io/course-webmapping/exercises-leaflet/01-template.html)
