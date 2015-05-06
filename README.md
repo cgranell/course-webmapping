@@ -46,7 +46,7 @@ Ejercicios:
 ### Semana 3: Leaflet.js 
 Videos:
 * [3.1-leaflet](https://www.dropbox.com/s/kzj72fe7pymzrby/uoc-3.1-leaflet.mp4?dl=0) (6:00): descripción [ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local"](http://cgranell.github.io/course-webmapping/examples-leaflet/07.html).
-* [3.2-leaflet]() (<5min): Enunciado ejercicios semana 3.
+* [3.2-leaflet](https://www.dropbox.com/s/oftd464agdd7x5d/uoc-3.2-leaflet.mp4?dl=0) (5:48): Enunciado ejercicios semana 3.
 
 Ejercicios:
 * [leaflet-02](http://cgranell.github.io/course-webmapping/exercises-leaflet/02-template.html)
@@ -55,11 +55,11 @@ Ejercicios:
 
 ### Semana 4: ESRI Leaflet plugin
 Videos (a partir del 13 de Mayo):
-* 4.1-intro (<3 min): presentación contenido semana 
-* 4.2-github (<3 min): navegación por los ejemplos del repositorio. 
-* 4.3.esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
-* 4.4.esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
-* 4.5.esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
+* 4.1-intro (<3 min): presentación y navegación por la web de ejemplos y ejercicios para la semana 4. 
+* 4.2-esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
+* 4.3-esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
+* 4.4-esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
+* 4.5-esri-leaflet (<10 min): Enunciado ejercicios semana 4.
 
 Ejercicios:
 * [esri-leaflet-01](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/01-template.html)
@@ -75,7 +75,9 @@ Videos:
 ### PEC
 La Prueba de Evaluación Continua (PEC) consiste en la realización de 7  ejercicios cortos de programación [marcados claramente en naranja](http://cgranell.github.io/course-webmapping/).
 
-Fecha de entrega: Se recomienda enviar los ejercicios tal como se van completamente. La fecha máxima de entrega será el **ultimo día de la cuarta semana (27 Mayo 2015)**
+Formato de entrega: Para cada ejercicio propuesto hay que capturar un `pantallazo` y copiarlo en un documento en formato doc, indicando brevemente de forma descriptiva (no código) lo que habéis hecho para realizar el ejercicio. Se deberá entregar un **único fichero (doc, pdf) con la resolución  (pantallazo + breve explicación) de los 7 ejercicios planteados**. 
+
+Fecha de entrega: La fecha máxima de entrega será el **ultimo día de la cuarta semana (27 Mayo 2015)**
 
 ### Práctica 
 La Práctica o proyecto final, [marcado claramente en rojo](http://cgranell.github.io/course-webmapping/), consiste en la programación por parte de los estudiantes de una aplicación web de mapas como proyecto final de la asignatura. Los estudiantes podrán definir la temática del proyecto y deberán combinar varias funcionalidades vistas en las semanas previas en menos de 100 líneas de código. El proyecto final deberá incluir las siguientes características:
