@@ -54,7 +54,7 @@ Ejercicios:
 
 
 ### Semana 4: ESRI Leaflet plugin
-Videos (a partir del 13 de Mayo):
+Videos:
 * [4.1-intro](https://www.dropbox.com/s/zydn88e8ojfwn8m/uoc-4.1-intro.mp4?dl=0) (2:07): presentación y navegación por la web de ejemplos y ejercicios para la semana 4. 
 * [4.2-esri-leaflet](https://www.dropbox.com/s/njhi3zswfdbhgiv/uoc-4.2-esri-leaflet.mp4?dl=0) (6:45): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
 * [4.3-esri-leaflet](https://www.dropbox.com/s/5keqkqzfq3adlkk/uoc-4.3-esri-leaflet.mp4?dl=0) (4:54): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
