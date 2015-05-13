@@ -160,16 +160,6 @@
     // Initialize default base map and add it to the map
     var baseLayer = L.esri.basemapLayer('Topographic').addTo(map);
 
-    var containerIcons = {
-      1: L.icon({
-        iconUrl: "../assets/images/container-organic.png",
-        iconSize: [27, 31],
-        iconAnchor: [13.5, 17.5],
-        popupAnchor: [0, -11],
-      })
-    };
-
-
     var urlFeatureLayer = "http://smartcampus.sg.uji.es:6080/arcgis/rest/services/SmartCampus/SmartCampus/MapServer/0"; 
     L.esri.clusteredFeatureLayer(urlFeatureLayer).addTo(map);
 
