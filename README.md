@@ -38,7 +38,7 @@ Videos:
 * [2.1-intro](https://www.dropbox.com/s/pgp0c4uuas15upr/uoc-2.1-intro.mp4?dl=0) (6:52): presentación y navegación por la web de ejemplos y ejercicios para las semanas 2 y 3. 
 * [2.2-leaflet](https://www.dropbox.com/s/1715wbg9xxz7wj8/uoc-2.2-leaflet.mp4?dl=0) (9:02): descripción [ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa"](http://cgranell.github.io/course-webmapping/examples-leaflet/01.html).
 * [2.3-leaflet](https://www.dropbox.com/s/8pr0aep3qvcopf1/uoc-2.3-leaflet.mp4?dl=0) (08:04): descripción [ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero"](http://cgranell.github.io/course-webmapping/examples-leaflet/04.html).
-* [2.4-leaflet](https://www.dropbox.com/s/dl6nqlpalyb2ldk/uoc-2.4-leaflet.mp4?dl=0) (5:02): Enunciado ejercicio semana 2.
+* [2.4-leaflet](https://www.dropbox.com/s/dl6nqlpalyb2ldk/uoc-2.4-leaflet.mp4?dl=0) (5:02): enunciado ejercicio semana 2.
 
 Ejercicios: 
 * [leaflet-01](http://cgranell.github.io/course-webmapping/exercises-leaflet/01-template.html)
@@ -46,7 +46,7 @@ Ejercicios:
 ### Semana 3: Leaflet.js 
 Videos:
 * [3.1-leaflet](https://www.dropbox.com/s/kzj72fe7pymzrby/uoc-3.1-leaflet.mp4?dl=0) (6:00): descripción [ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local"](http://cgranell.github.io/course-webmapping/examples-leaflet/07.html).
-* [3.2-leaflet](https://www.dropbox.com/s/oftd464agdd7x5d/uoc-3.2-leaflet.mp4?dl=0) (5:48): Enunciado ejercicios semana 3.
+* [3.2-leaflet](https://www.dropbox.com/s/oftd464agdd7x5d/uoc-3.2-leaflet.mp4?dl=0) (5:48): enunciado ejercicios semana 3.
 
 Ejercicios:
 * [leaflet-02](http://cgranell.github.io/course-webmapping/exercises-leaflet/02-template.html)
@@ -55,11 +55,11 @@ Ejercicios:
 
 ### Semana 4: ESRI Leaflet plugin
 Videos (a partir del 13 de Mayo):
-* 4.1-intro (<3 min): presentación y navegación por la web de ejemplos y ejercicios para la semana 4. 
+* [4.1-intro](https://www.dropbox.com/s/zydn88e8ojfwn8m/uoc-4.1-intro.mp4?dl=0) (2:07): presentación y navegación por la web de ejemplos y ejercicios para la semana 4. 
 * 4.2-esri-leaflet (<5 min): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
 * 4.3-esri-leaflet (<5 min): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
 * 4.4-esri-leaflet (<5 min): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
-* 4.5-esri-leaflet (<10 min): Enunciado ejercicios semana 4.
+* 4.5-esri-leaflet (<10 min): enunciado ejercicios semana 4.
 
 Ejercicios:
 * [esri-leaflet-01](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/01-template.html)
