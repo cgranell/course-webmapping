@@ -69,7 +69,7 @@ Ejercicios:
 
 ### Semana 5: Tu problema, tu solución (<100 líneas) 
 Videos:
-* 5.1-intro (<3 min): presentacion práctica 
+* [5.1-intro](https://www.dropbox.com/s/fmy25lhqspxqhtg/uoc-5.1-intro.mp4?dl=0) (3:57): presentacion práctica 
 
 ## Tareas a entregar
 ### PEC
@@ -86,6 +86,8 @@ La Práctica o proyecto final, [marcado claramente en rojo](http://cgranell.gith
 * Simbología personalizada de los datos (puntos, líneas).
 * Uso de popups para mostrar información asociada a la geometría (puntos, líneas).
 * Uso de al menos una operación espacial (clustering, heatmap).
+
+Formato de entrega: Un **único fichero comprimido (zip) con el código fuente de la práctica (.html + .js, o .html si el código javascript va en la propia página html)**. No es necesario incluir en el fiochero comprimido los ficheros javascript de leaflet o plugins adicionales que forman parte del proyecto, ni tampoco las hojas de estilo (css) utilizadas.
 
 Fecha de entrega: **Último día del curso (3 de junio 2015)**
 
