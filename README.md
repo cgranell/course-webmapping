@@ -59,7 +59,7 @@ Videos (a partir del 13 de Mayo):
 * [4.2-esri-leaflet](https://www.dropbox.com/s/njhi3zswfdbhgiv/uoc-4.2-esri-leaflet.mp4?dl=0) (6:45): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
 * [4.3-esri-leaflet](https://www.dropbox.com/s/5keqkqzfq3adlkk/uoc-4.3-esri-leaflet.mp4?dl=0) (4:54): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
 * [4.4-esri-leaflet](https://www.dropbox.com/s/bd1byqnmvlamg1v/uoc-4.4-esri-leaflet.mp4?dl=0) (3:49): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
-* 4.5-esri-leaflet (<10 min): enunciado ejercicios semana 4.
+* [4.5-esri-leaflet](https://www.dropbox.com/s/0g6qndspfmert49/uoc-4.5-esri-leaflet.mp4?dl=0) (8:04): enunciado ejercicios semana 4.
 
 Ejercicios:
 * [esri-leaflet-01](http://cgranell.github.io/course-webmapping/exercises-esri-leaflet/01-template.html)
