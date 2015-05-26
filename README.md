@@ -36,7 +36,7 @@ Videos:
 ### Semana 2: Leaflet.js 
 Videos:
 * [2.1-intro](https://vimeo.com/128782433) (7:04): presentación y navegación por la web de ejemplos y ejercicios para las semanas 2 y 3. 
-* [2.2-leaflet](https://www.dropbox.com/s/1715wbg9xxz7wj8/uoc-2.2-leaflet.mp4?dl=0) (9:16): descripción [ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa"](https://vimeo.com/128782384).
+* [2.2-leaflet](https://vimeo.com/128782384) (9:16): descripción [ejemplo 01 de Leaflet "Carga y muestra un mapa base sobre un mapa"](https://vimeo.com/128782384).
 * [2.3-leaflet](https://vimeo.com/128782434) (08:16): descripción [ejemplo 04 de Leaflet "Carga datos (puntos) en csv desde un fichero"](http://cgranell.github.io/course-webmapping/examples-leaflet/04.html).
 * [2.4-leaflet](https://vimeo.com/128782435) (5:14): enunciado ejercicio semana 2.
 
