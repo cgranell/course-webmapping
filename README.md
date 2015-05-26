@@ -1,4 +1,4 @@
-# B2.180 - Programación SIG en entornos web  (Programación II)
+# B2.180 - Programación SIG en entornos Web  (Programación II)
 
 Esta asignatura de cinco semanas forma parte de la especialziación de [Programación de sistemas de información geográfica](http://estudios.uoc.edu/es/masters-posgrados-especializaciones/especializacion/informatica-multimedia-telecomunicacion/programacion-desarrollo-sistemas-informacion-geografica/), de la [UOC]. 
 
@@ -6,7 +6,7 @@ Esta asignatura de cinco semanas forma parte de la especialziación de [Programa
 
 *Inicio especialización*: 18 marzo 2015
 
-Este repositorio complementa las actividades docentes de la asignatura. Aquí puedes encontrar [ejemplos y ejercicios](http://cgranell.github.io/course-webmapping/) sencillos de programación de aplicaciones web de mapas con JavaScript .  
+Este repositorio complementa las actividades docentes de la asignatura. Aquí puedes encontrar [ejemplos y ejercicios](http://cgranell.github.io/course-webmapping/) sencillos de programación de aplicaciones web de mapas con JavaScript. Todos los videos de la asignatura están disponibles en [Vimeo](https://vimeo.com/search?q=Programacion%20%20SIG%20en%20entornos%20Web).  
 
 *Créditos totales de la asignatura*: 4 ECTS (5 semanas)
 
@@ -45,8 +45,8 @@ Ejercicios:
 
 ### Semana 3: Leaflet.js 
 Videos:
-* [3.1-leaflet](https://www.dropbox.com/s/kzj72fe7pymzrby/uoc-3.1-leaflet.mp4?dl=0) (6:00): descripción [ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local"](http://cgranell.github.io/course-webmapping/examples-leaflet/07.html).
-* [3.2-leaflet](https://www.dropbox.com/s/oftd464agdd7x5d/uoc-3.2-leaflet.mp4?dl=0) (5:48): enunciado ejercicios semana 3.
+* [3.1-leaflet](https://vimeo.com/128782505) (6:24): descripción [ejemplo 07 de Leaflet "Carga datos (puntos) en geojson desde un fichero local"](http://cgranell.github.io/course-webmapping/examples-leaflet/07.html).
+* [3.2-leaflet](https://vimeo.com/128782506) (6:00): enunciado ejercicios semana 3.
 
 Ejercicios:
 * [leaflet-02](http://cgranell.github.io/course-webmapping/exercises-leaflet/02-template.html)
@@ -55,9 +55,9 @@ Ejercicios:
 
 ### Semana 4: ESRI Leaflet plugin
 Videos:
-* [4.1-intro](https://www.dropbox.com/s/zydn88e8ojfwn8m/uoc-4.1-intro.mp4?dl=0) (2:07): presentación y navegación por la web de ejemplos y ejercicios para la semana 4. 
-* [4.2-esri-leaflet](https://www.dropbox.com/s/njhi3zswfdbhgiv/uoc-4.2-esri-leaflet.mp4?dl=0) (6:45): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
-* [4.3-esri-leaflet](https://www.dropbox.com/s/5keqkqzfq3adlkk/uoc-4.3-esri-leaflet.mp4?dl=0) (4:54): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
+* [4.1-intro](https://vimeo.com/128782507) (2:19): presentación y navegación por la web de ejemplos y ejercicios para la semana 4. 
+* [4.2-esri-leaflet](https://vimeo.com/128782508) (6:57): descripción ejemplo 03 de Esri Leaflet "Carga datos desde un servicio web ArcGIS".
+* [4.3-esri-leaflet](https://vimeo.com/128782510) (5:06): descripción ejemplo 07 de Esri Leaflet "Agrupación (clustering) de geometrías de tipo punto".
 * [4.4-esri-leaflet](https://vimeo.com/128782549) (4:01): descripción ejemplo 08 de Esri Leaflet "Mapas de calor (heatmaps) a partir de geometrias de tipo de punto".
 * [4.5-esri-leaflet](https://vimeo.com/128782548) (8:16): enunciado ejercicios semana 4.
 
